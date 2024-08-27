@@ -8,7 +8,7 @@ import { faCheck, faTrash } from "@fortawesome/free-solid-svg-icons";
 export default function BlogPage() {
   const defaultContent = "capcipcup";
   return (
-    <div className="border w-max">
+    <div className="border w-max bg-maroon">
       <h1 className={title()}>Blog</h1>
       <div className="grid grid-cols-4 grid-flow-row gap-4 border">
         <div className="mt-7">
