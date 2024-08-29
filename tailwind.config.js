@@ -12,9 +12,11 @@ module.exports = {
       colors: {
         // White
         'white': '#FFFFFF',
+        'white-pucat': '#EAEEF3',
   
         // Shades of Red
         'dark-red': '#A10B0B', 
+        'light-red': '#BA1D1D',
         'maroon': '#540D0D',  
         'fire-brick': '#CC1919', 
         'orange-red': '#F8601E',

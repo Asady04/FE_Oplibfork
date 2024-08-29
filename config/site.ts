@@ -1,58 +1,46 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js + NextUI",
+  name: "Open Library - Telkom University",
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
-      label: "Home",
+      label: "Beranda",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "About Us",
+      href: "/landing/about",
     },
     {
-      label: "Pricing",
-      href: "/pricing",
+      label: "Gallery",
+      href: "/landing/gallery",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "Catalog",
+      href: "/landing/catalog",
     },
-    {
-      label: "About",
-      href: "/about",
-    },
+    // {
+    //   label: "About",
+    //   href: "/about",
+    // },
   ],
   navMenuItems: [
     {
-      label: "Profile",
+      label: "Beranda",
       href: "/profile",
     },
     {
-      label: "Dashboard",
+      label: "About Us",
       href: "/dashboard",
     },
     {
-      label: "Projects",
+      label: "Gallery",
       href: "/projects",
     },
     {
-      label: "Team",
+      label: "Catalog",
       href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
     },
     {
       label: "Logout",
