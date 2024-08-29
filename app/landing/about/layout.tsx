@@ -6,7 +6,7 @@ export default function AboutLayout({
   return (
     <section className="flex flex-col min-h-screen">
       {/* Background Image */}
-      <div className="relative bg-[url('/assets/image/kampus-surabaya.png')] bg-cover bg-center bg-no-repeat w-full h-[60vh] flex items-center justify-center">
+      <div className="relative bg-[url('/assets/image/kampus-surabaya.png')] bg-cover bg-center bg-no-repeat w-full h-[60vh] flex items-center justify-center rounded-md">
         <h1 className="font-bold text-white text-5xl text-center z-10">{children}</h1>
       </div>
 
