@@ -13,6 +13,7 @@ module.exports = {
         // White
         'white': '#FFFFFF',
         'white-pucat': '#EAEEF3',
+        'white-abu': '#A8A8A8',
   
         // Shades of Red
         'dark-red': '#A10B0B', 

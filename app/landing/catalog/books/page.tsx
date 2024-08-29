@@ -10,7 +10,7 @@ export default function JournalsPage() {
     <BooksLayout>
       <section className='mb-8'>
         <h1 className='flex text-maroon text-3xl font-bold text-start underline decoration-maroon underline-offset-2 gap-2'>
-        <FontAwesomeIcon icon={faBook} className='w-[27px]' />Books</h1>
+        <FontAwesomeIcon icon={faBook} className='w-[27px] mt-1' />Books</h1>
         <div className='mt-6 mb-12'>
             <ContentBooks />
         </div>
