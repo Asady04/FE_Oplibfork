@@ -14,7 +14,7 @@ export const ContentBeranda = () => {
                 <h2 className="text-maroon font-semibold text-2xl underline decoration-maroon underline-offset-2">Books</h2>
                 <NextLink href="/landing/catalog/books" className="text-dark-red hover:text-maroon hover:underline hover:decoration-maroon hover:underline-offset-2 font-semibold text-md -mb-7">Show all</NextLink>
             </div>
-            <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-sm shadow-black">
+            <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-md">
                 <img 
                     src="/assets/image/cover buku.svg" 
                     alt="cover buku 1" 
@@ -69,7 +69,7 @@ export const ContentBeranda = () => {
                 <h2 className="text-maroon font-semibold text-2xl underline decoration-maroon underline-offset-2">Journals</h2>
                 <NextLink href="/landing/catalog/journals" className="text-dark-red hover:text-maroon hover:underline hover:decoration-maroon hover:underline-offset-2 font-semibold text-md -mb-7">Show all</NextLink>
             </div>
-            <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-sm shadow-black">
+            <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-md">
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 1" 

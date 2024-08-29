@@ -6,7 +6,7 @@ export const Footer = () => {
     return(
         <footer>
             <div className="pl-6 pr-6 pt-7 pb-9 grid grid-cols-2 gap-3">
-                <div className="text-[14px] font-white">
+                <div className="text-[14px] font-white text-white">
                     <img src="" alt="" />
                     <p>
                     Salah satu unit yang berada di bawah Wakil Rektor I Bidang Akademik. 
@@ -14,7 +14,7 @@ export const Footer = () => {
                     leader dari pusat ilmu dan pengetahuan berbasis teknologi informasi 
                     dalam mendukung Universitas Entrepreneur Global"
                     </p>
-                    <div className="mt-4 ml-4">
+                    <div className="mt-4">
                         <div className="flex items-center space-x-2">
                             <FontAwesomeIcon icon={faGlobe} className="w-5 text-white" />
                             <a href="https://openlibrary.telkomuniversity.ac.id" target="_blank" rel="noopener noreferrer" className="text-white">

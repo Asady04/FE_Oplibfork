@@ -1,3 +1,4 @@
+"use client";
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -13,25 +14,56 @@ import { Input } from "@nextui-org/input";
 import NextLink from "next/link";
 import { siteConfig } from "@/config/site";
 import { SearchIcon } from "@/components/icons";
+import ModalLogin from "./modalLogin";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { ThemeSwitcher } from "./ThemeSwitcher";
+import ModalSearch from "./modalSearch";
 
 export const Navbar = () => {
   const searchInput = (
     <Input
-      aria-label="Search"
-      className="bg-dark-red text-white placeholder-white"
-      labelPlacement="outside"
-      placeholder="Search Catalog...."
-      startContent={<SearchIcon className="text-base text-white pointer-events-none flex-shrink-0" />}
-      type="search"
+      isClearable
+      radius="lg"
+      classNames={{
+        input: [
+          "bg-transparent",
+          "text-black/90 dark:text-white/90",
+          "placeholder:text-default-700/50 dark:placeholder:text-white/60",
+        ],
+        innerWrapper: "bg-transparent",
+        inputWrapper: [
+          "bg-default-200/50",
+          "dark:bg-default/60",
+          "backdrop-blur-xl",
+          "backdrop-saturate-200",
+          "hover:bg-default-200/70",
+          "dark:hover:bg-default/70",
+          "group-data-[focus=true]:bg-default-200/50",
+          "dark:group-data-[focus=true]:bg-default/60",
+          "!cursor-text",
+        ],
+      }}
+      placeholder="Type to search..."
+      startContent={
+        <SearchIcon className="text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none flex-shrink-0" />
+      }
     />
   );
 
   return (
-    <NextUINavbar maxWidth="xl" position="sticky" className="bg-white shadow-md">
+    <NextUINavbar
+      maxWidth="xl"
+      position="sticky"
+      className="bg-white shadow-md"
+    >
       <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-5 max-w-fit pr-4">
           <NextLink className="flex justify-start items-center gap-1" href="/">
-            <img src="/assets/logo/logo_oplib.svg" alt="Logo Oplib" className="h-10" />
+            <img
+              src="/assets/logo/logo_oplib.svg"
+              alt="Logo Oplib"
+              className="h-10"
+            />
           </NextLink>
         </NavbarBrand>
         <ul className="hidden lg:flex gap-5 justify-start ml-2">
@@ -48,18 +80,20 @@ export const Navbar = () => {
         </ul>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex basis-1/5 sm:basis-full" justify="end">
+      <NavbarContent
+        className="hidden sm:flex basis-1/5 sm:basis-full"
+        justify="end"
+      >
         <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-        <NavbarItem className="hidden md:flex">
-          <Button
-            isExternal
-            as={Link}
-            className="text-white font-bold bg-dark-red pr-5 pl-5"
-            variant="flat"
-          >
-            Sign In
-          </Button>
+        <NavbarItem className="hidden lg:flex">
+          <ModalSearch />
         </NavbarItem>
+        <NavbarItem className="hidden md:flex">
+          <ModalLogin />
+        </NavbarItem>
+        {/* <NavbarItem>
+          <ThemeSwitcher/>
+        </NavbarItem> */}
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">
@@ -76,8 +110,8 @@ export const Navbar = () => {
                   index === 2
                     ? "primary"
                     : index === siteConfig.navMenuItems.length - 1
-                    ? "danger"
-                    : "foreground"
+                      ? "danger"
+                      : "foreground"
                 }
                 href="#"
                 size="lg"
