@@ -1,4 +1,4 @@
-"use client ";
+"use client";
 import {
   Modal,
   ModalContent,
@@ -64,13 +64,13 @@ export default function ModalSearch() {
         placement="top-center"
         backdrop="blur"
       >
-        <ModalContent>
+        <ModalContent className="w-3/4 max-w-4xl">
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1 text-dark-red">
+              <ModalHeader className="flex flex-col gap-1 text-dark-red font-bold text-xl mt-2">
                 Advanced Search
               </ModalHeader>
-              <ModalBody>
+              <ModalBody className="grid grid-cols-2 gap-4">
                 <Dropdown>
                   <DropdownTrigger>
                     <Button
@@ -98,54 +98,7 @@ export default function ModalSearch() {
                     <DropdownItem key="iteration">Iteration</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
-                <Input
-                  type="text"
-                  variant="flat"
-                  label="Catalog Number"
-                  placeholder="Enter your username.."
-                />
-                <Input
-                  type="text"
-                  variant="flat"
-                  label="Title"
-                  placeholder="Enter your username.."
-                />
-                <Input
-                  type="text"
-                  variant="flat"
-                  label="Author"
-                  placeholder="Enter your username.."
-                />
-                <Input
-                  type="text"
-                  variant="flat"
-                  label="Publisher"
-                  placeholder="Enter your username.."
-                />
-                <Input
-                  type="text"
-                  variant="flat"
-                  label="Editor/Mentor"
-                  placeholder="Enter your username.."
-                />
-                <Input
-                  type="text"
-                  variant="flat"
-                  label="Subject"
-                  placeholder="Enter your username.."
-                />
-                <Input
-                  type="text"
-                  variant="flat"
-                  label="Classification Code"
-                  placeholder="Enter your username.."
-                />
-                <Input
-                  type="text"
-                  variant="flat"
-                  label="Classification Code"
-                  placeholder="Enter your username.."
-                />
+
                 <Dropdown>
                   <DropdownTrigger>
                     <Button
@@ -172,9 +125,52 @@ export default function ModalSearch() {
                     <DropdownItem key="location5">Location5</DropdownItem>
                   </DropdownMenu>
                 </Dropdown>
+                <Input
+                  type="text"
+                  variant="flat"
+                  label="Catalog Number"
+                  placeholder="Enter catalog number.."
+                />
+                <Input
+                  type="text"
+                  variant="flat"
+                  label="Title"
+                  placeholder="Enter title.."
+                />
+                <Input
+                  type="text"
+                  variant="flat"
+                  label="Author"
+                  placeholder="Enter author.."
+                />
+                <Input
+                  type="text"
+                  variant="flat"
+                  label="Publisher"
+                  placeholder="Enter publisher.."
+                />
+                <Input
+                  type="text"
+                  variant="flat"
+                  label="Editor/Mentor"
+                  placeholder="Enter editor/mentor.."
+                />
+                <Input
+                  type="text"
+                  variant="flat"
+                  label="Subject"
+                  placeholder="Enter subject.."
+                />
+                <Input
+                  type="text"
+                  variant="flat"
+                  label="Classification Code"
+                  placeholder="Enter classification code.."
+                />
+
                 <DateRangePicker label="Entry Date" visibleMonths={2} />
               </ModalBody>
-              <ModalFooter>
+              <ModalFooter className="flex justify-end gap-2">
                 <Button color="danger" variant="flat" onPress={onClose}>
                   Close
                 </Button>

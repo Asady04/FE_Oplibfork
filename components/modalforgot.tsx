@@ -24,11 +24,11 @@ export default function ModalForgot() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1">
+              <ModalHeader className="flex flex-col gap-1 text-dark-red font-bold text-xl">
                 Forgot your Password?
               </ModalHeader>
               <ModalBody>
-                <p>
+                <p className="text-center">
                  please contact: albaghdadi@staff.telkomuniversity.ac.id
                 </p>
               </ModalBody>

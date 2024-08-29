@@ -42,8 +42,8 @@ export default function ModalLogin() {
         <ModalContent>
           {(onClose) => (
             <>
-              <ModalHeader className="flex flex-col gap-1 text-dark-red">
-                Log in
+              <ModalHeader className="flex flex-col gap-1 text-dark-red font-bold text-xl">
+                Sign In
               </ModalHeader>
               <ModalBody>
                 <Input
