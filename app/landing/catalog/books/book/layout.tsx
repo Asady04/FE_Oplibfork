@@ -4,8 +4,8 @@ export default function BookLayout({
     children: React.ReactNode;
   }) {
     return (
-      <section className="flex  gap-4 ">
-        <div className="max-w-5xl w-full text-start">
+      <section className="relative flex flex-col min-h-screen">
+        <div className="flex-grow">
           {children}
         </div>
       </section>

@@ -5,7 +5,7 @@ export default function JournalLayout({
   }) {
     return (
       <section className="flex  gap-4 ">
-        <div className="max-w-5xl w-full text-start">
+        <div className="flex-grow">
           {children}
         </div>
       </section>

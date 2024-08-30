@@ -4,10 +4,10 @@ export default function CatalogLayout({
   children: React.ReactNode;
 }) {
   return (
-    <section className="flex items-center justify-center gap-4 ">
-      <div className="max-w-5xl w-full text-center">
+    <div className="relative flex flex-col min-h-screen">
+      <main className="flex-grow ">
         {children}
-      </div>
-    </section>
+      </main>
+    </div>
   );
 }

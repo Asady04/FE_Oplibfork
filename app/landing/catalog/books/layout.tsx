@@ -5,7 +5,7 @@ export default function BooksLayout({
   }) {
     return (
       <section className="flex items-center justify-center gap-4 ">
-        <div className="max-w-5xl w-full text-center">
+        <div className="flex-grow">
           {children}
         </div>
       </section>

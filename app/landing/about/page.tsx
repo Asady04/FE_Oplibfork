@@ -1,11 +1,15 @@
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { ContentAbout } from "@/components/contentAbout";
 
-
-export default function AboutPage() {
+export default function Home() {
   return (
-    <div>
-      <div>
-        <h1 className="">About Us</h1>
+    <section>
+      <Navbar />
+      <div className="container mx-auto max-w-6xl px-6 mt-5">
+        <ContentAbout />
       </div>
-    </div>
+      <Footer />
+    </section>
   );
 }

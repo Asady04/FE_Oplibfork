@@ -10,7 +10,7 @@ export const ContentBeranda = () => {
         <div className="absolute inset-0 bg-black backdrop-blur-sm transition-all duration-500 ease-in-out bg-opacity-30"></div>
         <div className="relative z-10 p-6 text-center">
           <h1 className="text-white text-4xl md:text-5xl font-bold mb-4 animate-fadeInUp">
-            Welcome to the Open Library Website
+            Welcome to the Open Library
           </h1>
           <h2 className="text-white text-2xl md:text-3xl font-semibold animate-fadeInUp delay-200">
             Telkom University

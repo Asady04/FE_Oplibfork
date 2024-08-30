@@ -5,7 +5,7 @@ export default function NewsLayout({
   }) {
     return (
       <section className="flex items-center justify-center gap-4 ">
-        <div className="max-w-6xl w-full text-center">
+        <div className="flex-growr">
           {children}
         </div>
       </section>
