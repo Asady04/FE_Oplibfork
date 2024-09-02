@@ -1,4 +1,5 @@
 "use client";
+
 import {
   Navbar as NextUINavbar,
   NavbarContent,
@@ -15,8 +16,6 @@ import NextLink from "next/link";
 import { siteConfig } from "@/config/site";
 import { SearchIcon } from "@/components/icons";
 import ModalLogin from "./modalLogin";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import { ThemeSwitcher } from "./ThemeSwitcher";
 import ModalSearch from "./modalSearch";
 
 export const Navbar = () => {
@@ -54,9 +53,9 @@ export const Navbar = () => {
     <NextUINavbar
       maxWidth="xl"
       position="sticky"
-      className="bg-white shadow-md"
+      className="bg-white shadow-md w-full"
     >
-      <NavbarContent className="basis-1/5 sm:basis-full" justify="start">
+      <NavbarContent className="flex-grow basis-1/5 sm:basis-full" justify="start">
         <NavbarBrand as="li" className="gap-5 max-w-fit pr-4">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <img
@@ -91,9 +90,6 @@ export const Navbar = () => {
         <NavbarItem className="hidden md:flex">
           <ModalLogin />
         </NavbarItem>
-        {/* <NavbarItem>
-          <ThemeSwitcher/>
-        </NavbarItem> */}
       </NavbarContent>
 
       <NavbarContent className="sm:hidden basis-1 pl-4" justify="end">

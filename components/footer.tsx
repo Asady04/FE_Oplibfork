@@ -4,7 +4,7 @@ import { faLinkedin, faInstagram } from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = () => {
     return(
-        <footer>
+        <footer className="w-full bg-dark-red">
             <div className="pl-6 pr-6 pt-7 pb-9 grid grid-cols-2 gap-3">
                 <div className="text-[14px] font-white text-white">
                     <img src="" alt="" />

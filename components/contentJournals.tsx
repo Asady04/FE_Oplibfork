@@ -4,7 +4,7 @@ import { faUser, faTags, faBullhorn, faBookBookmark } from '@fortawesome/free-so
 
 export const ContentJournals = () => {
   return (
-    <div className="grid grid-cols-2 gap-4">
+    <div className="grid grid-cols-2 gap-7">
       {/* Column 1 */}
       <div className="flex bg-dark-red p-3 rounded-lg shadow-md shadow-black">
         <div className="flex flex-col items-center">

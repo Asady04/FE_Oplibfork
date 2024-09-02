@@ -3,8 +3,34 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUpRightFromSquare, faBook, faBookJournalWhills, faCalendarPlus } from "@fortawesome/free-solid-svg-icons";
 
 export const ContentCatalog = () => {
+
+    // Assuming you have the counts for new releases, books, and journals
+  const newReleasesCount = 20;
+  const booksCount = 1130;
+  const journalsCount = 1815;
+  const totalCount = newReleasesCount + booksCount + journalsCount;
+
     return (
-      <div>
+      <section>
+        {/* total catalogs */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-5">
+          <div className="bg-gradient-to-r from-maroon via-dark-red to-red-600 p-4 rounded-lg text-white shadow-md shadow-black">
+            <h4 className="text-sm">Total Items</h4>
+            <h2 className="text-2xl font-bold">{totalCount}+</h2>
+          </div>
+          <div className="bg-gradient-to-r from-maroon via-dark-red to-red-600 p-4 rounded-lg text-white shadow-md shadow-black">
+            <h4 className="text-sm">New Releases</h4>
+            <h2 className="text-2xl font-bold">{newReleasesCount}+</h2>
+          </div>
+          <div className="bg-gradient-to-r from-maroon via-dark-red to-red-600 p-4 rounded-lg text-white shadow-md shadow-black">
+            <h4 className="text-sm">Books</h4>
+            <h2 className="text-2xl font-bold">{booksCount}+</h2>
+          </div>
+          <div className="bg-gradient-to-r from-maroon via-dark-red to-red-600 p-4 rounded-lg text-white shadow-md shadow-black">
+            <h4 className="text-sm">Journals</h4>
+            <h2 className="text-2xl font-bold">{journalsCount}+</h2>
+          </div>
+        </div>
         {/* content recent news*/}
         <div className="mt-11 mb-5">
             <div className="flex">
@@ -176,7 +202,7 @@ export const ContentCatalog = () => {
             </div>
         </div>
 
-      </div>
+      </section>
     );
   };
   

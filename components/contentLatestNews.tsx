@@ -7,7 +7,7 @@ export const ContentLatestNews = () => {
     <section className=" shadow-md shadow-dark-red rounded-lg p-4">
       {/* latest news */}
       <h3 className="flex text-maroon text-xl text-start font-bold underline mb-5 gap-2">
-        <FontAwesomeIcon icon={faNewspaper} className="w-[26px]"/>Latest News
+        <FontAwesomeIcon icon={faNewspaper} className="w-[26px] mt-1"/>Latest News
       </h3>
 
       {/* news 1 */}
