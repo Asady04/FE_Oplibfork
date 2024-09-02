@@ -36,7 +36,7 @@ export default function HomeAdmin() {
     <AdminLayout>
       <section>
         <div className="bg-[url('/assets/image/kampus-surabaya.png')] bg-cover bg-center bg-no-repeat w-full h-[32vh] text-white pb-2 pt-2 shadow-md">
-          <div className="flex h-full">
+          <div className="flex h-screen pb-14">
             {/* Sidebar */}
             <div className="w-12 ml-5">
               <Sidebar />
