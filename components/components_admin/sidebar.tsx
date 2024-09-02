@@ -14,7 +14,7 @@ import ModalLogout  from "@/components/components_admin/modalLogout"
 
 export const Sidebar = () => {
   return (
-    <div className="flex flex-col justify-between bg-white shadow-lg shadow-gray-400 rounded-lg mt-8">
+    <div className="flex flex-col justify-between bg-white shadow-lg shadow-gray-400 rounded-lg mt-8 h-full">
       {/* Top section with logo and icons */}
       <div className="flex flex-col items-center">
         {/* Logo */}
