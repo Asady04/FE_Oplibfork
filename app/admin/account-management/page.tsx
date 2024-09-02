@@ -11,7 +11,7 @@ import {
   faCalendarAlt,
   faCircleUser,
   faSquarePlus,
-  faSearch
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 
 export default function HomeAdmin() {
@@ -108,34 +108,36 @@ export default function HomeAdmin() {
                 </div>
               </div>
 
-              <div className="flex bg-white p-3 rounded-lg shadow-md w-full gap-2 relative z-10">
+              <div className="flex bg-white p-3 rounded-lg shadow-md justify-between w-full gap-2 px-5 relative z-10">
                 {/* Search input */}
-                <div className="flex mr-[20px] max-w-[300px] items-center">
-                  {searchInput}
+                <div className="flex flex-row w-full gap-5">
+                  <div className="flex max-w-[300px] items-center">
+                    {searchInput}
+                  </div>
+
+                  {/* dropdown */}
+                  <Select
+                    label="Select a library"
+                    placeholder="Select a library"
+                    className="flex-grow max-w-[290px] text-dark-red font-bold"
+                  >
+                    {library.map((library) => (
+                      <SelectItem key={library.key}>{library.label}</SelectItem>
+                    ))}
+                  </Select>
+                  <Select
+                    label="Select a user"
+                    placeholder="Select a user"
+                    className="flex-grow max-w-[220px] text-dark-red font-bold"
+                  >
+                    {role.map((role) => (
+                      <SelectItem key={role.key}>{role.label}</SelectItem>
+                    ))}
+                  </Select>
                 </div>
 
-                {/* dropdown */}
-                <Select
-                  label="Select a library"
-                  placeholder="Select a library"
-                  className="flex-grow max-w-[290px] text-dark-red font-bold"
-                >
-                  {library.map((library) => (
-                    <SelectItem key={library.key}>{library.label}</SelectItem>
-                  ))}
-                </Select>
-                <Select
-                  label="Select a user"
-                  placeholder="Select a user"
-                  className="flex-grow max-w-[220px] text-dark-red font-bold"
-                >
-                  {role.map((role) => (
-                    <SelectItem key={role.key}>{role.label}</SelectItem>
-                  ))}
-                </Select>
-
                 {/* add data */}
-                <div className="flex ml-[130px] items-center">
+                <div className="flex items-center">
                   <ModalAddUser />
                 </div>
               </div>
