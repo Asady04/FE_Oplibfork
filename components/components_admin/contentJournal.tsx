@@ -26,7 +26,7 @@ export default function ContentCatalogJournal() {
             className="h-[290px] mb-2 object-cover"
           />
           {/* content informasi */}
-          <div className="mt-3">
+          <div className="mt-1">
             {/* judul book */}
             <h2 className="text-black text-start text-3xl font-bold">
               Data Mining: Algoritma dan Contoh Perhitungan Matematis
@@ -34,14 +34,14 @@ export default function ContentCatalogJournal() {
 
             <div className="grid grid-cols-2 gap-7 mt-1">
               {/* pengarang */}
-              <div className="flex gap-2 mt-3">
-                <span>
+              <div className="gap-2 mt-3">
+                <span className="inline-block">
                   <h5 className="flex items-center text-white text-sm font-semibold p-1 pl-3 pr-3 gap-2 bg-lime rounded-lg flex-shrink-0">
                     <FontAwesomeIcon icon={faUser} className="h-[17px]" />
                     Pengarang
                   </h5>
                 </span>
-                <div className="text-black text-sm font-medium">
+                <div className="text-black text-sm font-medium mt-2">
                   <div className="flex flex-col">
                     {/* Nama Pengarang */}
                     <div className="flex items-center gap-2">
@@ -71,14 +71,14 @@ export default function ContentCatalogJournal() {
               </div>
 
               {/* penerbit */}
-              <div className="flex gap-2 mt-4">
-                <span>
+              <div className="gap-2 mt-4">
+                <span className="inline-block">
                   <h5 className="flex items-center text-white text-sm font-semibold p-1 pl-[19px] pr-[19px] gap-2 bg-goldenrod rounded-lg flex-shrink-0">
                     <FontAwesomeIcon icon={faBullhorn} className="h-[17px]" />
                     Penerbit
                   </h5>
                 </span>
-                <div className="text-black text-sm font-medium">
+                <div className="text-black text-sm font-medium mt-2">
                   <div className="flex flex-col">
                     {/* Nama Penerbit */}
                     <div className="flex items-center gap-2">

@@ -17,7 +17,7 @@ export default function ContentCatalogs() {
             <FontAwesomeIcon icon={faSwatchbook} className="w-[17px]" />
             Populer
           </h4>
-          <span className="-mr-5">
+          <span className="-mr-2">
             <ModalAddCatalogs />
           </span>
         </div>
