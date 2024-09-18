@@ -25,8 +25,9 @@ export default function ModalAddUser() {
       <Button
         isExternal
         as={Link}
-        className="text-dark-red bg-white border-none shadow-none hover:bg-white"
+        className="text-dark-red bg-transparent border-none shadow-none hover:bg-white"
         onPress={onOpen}
+        isIconOnly
       >
         <FontAwesomeIcon
           icon={faSquarePlus}
