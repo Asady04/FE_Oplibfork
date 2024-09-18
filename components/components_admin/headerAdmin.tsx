@@ -1,4 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {Avatar} from "@nextui-org/react";
 import {
   faClock,
   faCalendarAlt,
@@ -32,8 +33,8 @@ export default function HeaderAdmin() {
         </p>
 
         {/* Profile Admin */}
-        <h2 className="flex items-center font-bold text-xl gap-2">
-          Admin <FontAwesomeIcon icon={faCircleUser} className="w-[30px]" />
+        <h2 className="flex items-center font-bold text-xl gap-4">
+          Admin <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" size="md" />
         </h2>
       </div>
     </div>

@@ -8,37 +8,16 @@ import {
   Button,
   useDisclosure,
   Link,
-  Select,
-  SelectItem,
   Input,
 } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFileExcel } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 
-export default function ModalAddUserExcel() {
+export default function ModalAddCatalogExcel() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [selectedRole, setSelectedRole] = useState(""); // State for selected role
   const [file, setFile] = useState(null); // State for selected file
-
-  const libraries = [
-    { key: "bdg", label: "Open Library TelU - Bandung" },
-    { key: "jktA", label: "Open Library TelU - Jakarta A" },
-    { key: "jktB", label: "Open Library TelU - Jakarta B" },
-    { key: "srby", label: "Open Library TelU - Surabaya" },
-  ];
-
-  const roles = [
-    { key: "admin", label: "Administrator" },
-    { key: "coadmin", label: "Co-Administrator" },
-    { key: "staff", label: "Library Staff" },
-    { key: "lecture", label: "Lecture" },
-    { key: "student", label: "Student" },
-  ];
-
-  const handleRoleChange = (roleKey) => {
-    setSelectedRole(roleKey);
-  };
 
   const handleFileChange = (event) => {
     setFile(event.target.files[0]);
@@ -76,9 +55,9 @@ export default function ModalAddUserExcel() {
                 <div className="mb-4 text-gray-600 text-sm text-justify">
                   <p>
                     Please ensure the Excel file follows the required format.
-                    The file should include columns for <span className="font-semibold text-dark-red">Name, ID Number, Email, Username, Password, dstb. </span>
+                    The file should include columns for <span className="font-semibold text-dark-red"> Title Book, Author's Name, Status, Editor, Translator, Publisher name, City, Year of Publication, Book code, Subject, Rack number, Classification, Type of book, Rental price, Daily fine, Type circulation, Pages, Link, Abstraction. </span>
                     Only .xlsx and .xls file formats are accepted. Maximum file
-                    size is 20MB.
+                    size is 200MB.
                   </p>
                 </div>
 
@@ -92,32 +71,6 @@ export default function ModalAddUserExcel() {
                   />
                 </div>
 
-                {/* User Info Section */}
-                <div className="grid grid-cols-2 gap-4">
-                  <Select
-                    label="Library"
-                    placeholder="Select a library"
-                    className="flex-grow max-w-[290px]"
-                  >
-                    {libraries.map((library) => (
-                      <SelectItem key={library.key}>
-                        {library.label}
-                      </SelectItem>
-                    ))}
-                  </Select>
-                  <Select
-                    label="Role"
-                    placeholder="Select a role"
-                    className="flex-grow max-w-[290px]"
-                    onChange={(e) => handleRoleChange(e.target.value)}
-                  >
-                    {roles.map((role) => (
-                      <SelectItem key={role.key} value={role.key}>
-                        {role.label}
-                      </SelectItem>
-                    ))}
-                  </Select>
-                </div>
               </ModalBody>
               <ModalFooter>
                 <Button
