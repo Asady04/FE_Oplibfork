@@ -7,11 +7,11 @@ import {
   TableRow,
   TableCell,
 } from "@nextui-org/react";
-import ModalReviewUserA from "./modalReviewUserA";
+import ModalViewRoom from "./modalReviewRoom";
 import ModalDelateData from "./modalDelateUser";
-import ModalEditUser from "./modalEditUser";
+import ModalEditRoom from "./modalEditRoom";
 
-export default function ContentAccountManagement() {
+export default function ContentRoomRecervations() {
   return (
     <Table
       aria-label="Account Management Table"
@@ -22,19 +22,16 @@ export default function ContentAccountManagement() {
           NO
         </TableColumn>
         <TableColumn className="bg-white text-dark-red font-bold text-sm text-center">
-          NAME
+          IMAGE
         </TableColumn>
         <TableColumn className="bg-white text-dark-red font-bold text-sm text-center">
-          ID NUMBER
+          ROOM NAME
         </TableColumn>
         <TableColumn className="bg-white text-dark-red font-bold text-sm text-center">
-          USERNAME
+          CAPACITY
         </TableColumn>
         <TableColumn className="bg-white text-dark-red font-bold text-sm text-center">
-          PASSWORD
-        </TableColumn>
-        <TableColumn className="bg-white text-dark-red font-bold text-sm text-center">
-          EMAIL
+          STATUS
         </TableColumn>
         <TableColumn className="bg-white text-dark-red font-bold text-sm text-center rounded-tr-md rounded-br-md">
           ACTION
@@ -43,46 +40,55 @@ export default function ContentAccountManagement() {
       <TableBody>
         <TableRow key="1" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
           <TableCell className="text-center">1</TableCell>
-          <TableCell className="text-center">Tony Reichert</TableCell>
-          <TableCell className="text-center">1101223089</TableCell>
-          <TableCell className="text-center">ndn-rg</TableCell>
-          <TableCell className="text-center">app&paltform</TableCell>
           <TableCell className="text-center">
-            username@telkomuniversity.ac.id
+            <img
+              src="/assets/image/perpus.png"
+              alt="Room 1"
+              className="w-[130px] rounded-md inline-block"
+            />
           </TableCell>
-          <TableCell className="flex gap-2 text-white text-center items-center justify-center">
-            <ModalReviewUserA />
-            <ModalEditUser />
+          <TableCell className="text-center">Room 1</TableCell>
+          <TableCell className="text-center">4</TableCell>
+          <TableCell className="text-center">Free</TableCell>
+          <TableCell className="flex gap-2 text-white text-center items-center justify-center mt-5">
+            <ModalViewRoom />
+            <ModalEditRoom />
             <ModalDelateData />
           </TableCell>
         </TableRow>
         <TableRow key="2" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
           <TableCell className="text-center">2</TableCell>
-          <TableCell className="text-center">Zoey Lang</TableCell>
-          <TableCell className="text-center">1101229067</TableCell>
-          <TableCell className="text-center">ndn-rg</TableCell>
-          <TableCell className="text-center">app&paltform</TableCell>
           <TableCell className="text-center">
-            username@telkomuniversity.ac.id
+            <img
+              src="/assets/image/perpus.png"
+              alt="Room 1"
+              className="w-[130px] rounded-md inline-block"
+            />
           </TableCell>
-          <TableCell className="flex gap-2 text-white text-center items-center justify-center">
-            <ModalReviewUserA />
-            <ModalEditUser />
+          <TableCell className="text-center">Room 2</TableCell>
+          <TableCell className="text-center">8</TableCell>
+          <TableCell className="text-center">Free</TableCell>
+          <TableCell className="flex gap-2 text-white text-center items-center justify-center mt-5">
+            <ModalViewRoom />
+            <ModalEditRoom />
             <ModalDelateData />
           </TableCell>
         </TableRow>
         <TableRow key="3" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
           <TableCell className="text-center">3</TableCell>
-          <TableCell className="text-center">Jane Fisher</TableCell>
-          <TableCell className="text-center">1101229053</TableCell>
-          <TableCell className="text-center">ndn-rg</TableCell>
-          <TableCell className="text-center">app&paltform</TableCell>
           <TableCell className="text-center">
-            username@telkomuniversity.ac.id
+            <img
+              src="/assets/image/perpus.png"
+              alt="Room 1"
+              className="w-[130px] rounded-md inline-block"
+            />
           </TableCell>
-          <TableCell className="flex gap-2 text-white text-center items-center justify-center">
-            <ModalReviewUserA />
-            <ModalEditUser />
+          <TableCell className="text-center">Room 3</TableCell>
+          <TableCell className="text-center">12</TableCell>
+          <TableCell className="text-center">Paid</TableCell>
+          <TableCell className="flex gap-2 text-white text-center items-center justify-center mt-5">
+            <ModalViewRoom />
+            <ModalEditRoom />
             <ModalDelateData />
           </TableCell>
         </TableRow>

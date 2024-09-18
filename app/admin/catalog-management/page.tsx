@@ -9,14 +9,13 @@ import {
 } from "@nextui-org/react";
 import AdminLayout from "./layout";
 import HeaderAdmin from "@/components/components_admin/headerAdmin";
+import ContentCatalogs from "@/components/components_admin/contentCatalogs";
 import { Sidebar } from "@/components/components_admin/sidebar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCaretDown,
-  faUserGear,
-  faUserPen,
-  faUserGroup,
-  faUserGraduate,
+  faBook,
+  faJournalWhills,
   faSwatchbook,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -36,11 +35,11 @@ export default function HomeAdmin() {
         <div className="bg-[url('/assets/image/kampus-surabaya.png')] bg-cover bg-center bg-no-repeat w-full h-[32vh] text-white pb-2 pt-2 shadow-md">
           <div className="flex  h-screen pb-14">
             {/* Sidebar */}
-            <div className="w-12 ml-5 z-20">
+            <div className="fixed w-12 ml-5 z-20">
               <Sidebar />
             </div>
 
-            <div className="flex-1 px-[60px] py-4 mt-2">
+            <div className="flex-1 max-w-[960px] mx-auto mt-6">
               {/* Header dengan kalimat Good Morning */}
               <HeaderAdmin />
 
@@ -53,7 +52,10 @@ export default function HomeAdmin() {
                       className="capitalize bg-white shadow-md shadow-black text-[12px] font-semibold pl-6 pr-6"
                     >
                       {selectedValue}{" "}
-                      <FontAwesomeIcon icon={faCaretDown} className="w-[12px]" />
+                      <FontAwesomeIcon
+                        icon={faCaretDown}
+                        className="w-[12px]"
+                      />
                     </Button>
                   </DropdownTrigger>
                   <DropdownMenu
@@ -81,64 +83,50 @@ export default function HomeAdmin() {
               </div>
 
               {/* Total catalog dan lainnya */}
-              <div className="flex gap-4 -ml-4">
-                {/* Container co-admins */}
-                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
-                  <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
-                    <FontAwesomeIcon icon={faUserGear} className="w-[25px]" />
-                    Co-Admin
-                  </h6>
-                  <h4 className="text-maroon text-center font-bold text-3xl mt-1">
-                    12
-                  </h4>
-                </div>
-
-                {/* Container Staff */}
-                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
-                  <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
-                    <FontAwesomeIcon icon={faUserPen} className="w-[25px]" />
-                    Staff
-                  </h6>
-                  <h4 className="text-maroon text-center font-bold text-3xl mt-1">
-                    12
-                  </h4>
-                </div>
-
-                {/* Container Lecture */}
-                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
-                  <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
-                    <FontAwesomeIcon icon={faUserGroup} className="w-[25px]" />
-                    Lecture
-                  </h6>
-                  <h4 className="text-maroon text-center font-bold text-3xl mt-1">
-                    12
-                  </h4>
-                </div>
-
-                {/* Container Student */}
-                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
-                  <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
-                    <FontAwesomeIcon icon={faUserGraduate} className="w-[25px]" />
-                    Student
-                  </h6>
-                  <h4 className="text-maroon text-center font-bold text-3xl mt-1">
-                    12
-                  </h4>
-                </div>
-
-                {/* Container Catalog */}
+              <div className="flex gap-4 -ml-1 -mt-5">
+                {/* Container catalogs */}
                 <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
                   <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
                     <FontAwesomeIcon icon={faSwatchbook} className="w-[25px]" />
-                    Catalog
+                    Catalogs
                   </h6>
-                  <h4 className="text-maroon text-center font-bold text-2xl mt-1">
-                    12,890
+                  <h4 className="text-maroon text-center font-bold text-xl mt-1">
+                    21,789
+                  </h4>
+                </div>
+
+                {/* Container journals */}
+                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
+                  <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
+                    <FontAwesomeIcon
+                      icon={faJournalWhills}
+                      className="w-[25px]"
+                    />
+                    Journals
+                  </h6>
+                  <h4 className="text-maroon text-center font-bold text-xl mt-1">
+                    11,589
+                  </h4>
+                </div>
+
+                {/* Container books */}
+                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
+                  <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
+                    <FontAwesomeIcon icon={faBook} className="w-[25px]" />
+                    Books
+                  </h6>
+                  <h4 className="text-maroon text-center font-bold text-xl mt-1">
+                    10,200
                   </h4>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+
+        {/* content table */}
+        <div className="mt-11 mb-9 max-w-[960px] mx-auto">
+          <ContentCatalogs />
         </div>
       </section>
     </AdminLayout>

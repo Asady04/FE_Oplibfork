@@ -7,8 +7,7 @@ import {
   faClipboardList,
   faExclamationCircle,
   faBullhorn,
-  faBook,
-  faSignOutAlt,
+  faBook
 } from "@fortawesome/free-solid-svg-icons";
 import ModalLogout  from "@/components/components_admin/modalLogout"
 
@@ -18,13 +17,13 @@ export const Sidebar = () => {
       {/* Top section with logo and icons */}
       <div className="flex flex-col items-center">
         {/* Logo */}
-        <div className="p-1 items-center">
+        <NextLink href="/admin" className="p-1 items-center">
           <img
             src="/assets/logo/logo_oplib.svg"
             alt="Logo"
             className="w-[40px] p-1 mt-6"
           />
-        </div>
+        </NextLink>
 
         {/* Icons with text on hover */}
         <div className="flex flex-col items-center mt-6 space-y-5 text-dark-red">
@@ -65,7 +64,7 @@ export const Sidebar = () => {
           </div>
 
           <div className="relative group">
-            <NextLink href="/admin/user-feedback">
+            <NextLink href="/admin/feedback">
               <FontAwesomeIcon icon={faExclamationCircle} className="w-[20px] h-[20px] "/>
             </NextLink>
             <span className="absolute left-10 top-1/2 transform -translate-y-1/2 hidden group-hover:block bg-dark-red text-white text-xs font-semibold px-2 py-1 rounded-lg whitespace-nowrap">
