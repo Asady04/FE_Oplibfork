@@ -3,9 +3,8 @@ import React from "react";
 import AdminLayout from "./layout";
 import { Sidebar } from "@/components/components_admin/sidebar";
 import HeaderAdmin from "@/components/components_admin/headerAdmin";
-import ModalAddUser from "@/components/components_admin/modalAddUser";
-import ContentAccountManagement from "@/components/components_admin/contentAccountManagement";
-import { Select, SelectItem, Input } from "@nextui-org/react"; // Pastikan Input diimpor
+import ContentDailyReports from "@/components/components_admin/contentDailyReports";
+import { Select, SelectItem, Input } from "@nextui-org/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,14 +14,6 @@ export default function HomeAdmin() {
     { key: "jktA", label: "Open Library TelU - Jakarta A" },
     { key: "jktB", label: "Open Library TelU - Jakarta B" },
     { key: "srby", label: "Open Library TelU - Surabaya" },
-  ];
-
-  const role = [
-    { key: "admin", label: "Administrator" },
-    { key: "coadmin", label: "Co-Administrator" },
-    { key: "staff", label: "Library Staff" },
-    { key: "lecture", label: "Lecture" },
-    { key: "student", label: "Student" },
   ];
 
   const searchInput = (
@@ -48,7 +39,7 @@ export default function HomeAdmin() {
           "!cursor-text",
         ],
       }}
-      placeholder="Search by name..."
+      placeholder="Search Daily Reports"
       startContent={
         <FontAwesomeIcon
           icon={faSearch}
@@ -73,46 +64,28 @@ export default function HomeAdmin() {
               {/* Header dengan kalimat Good Morning */}
               <HeaderAdmin />
 
-              <div className="flex justify-between bg-white p-3 rounded-lg shadow-md w-full gap-2 relative z-10">
-                
-                  {/* Search input */}
-                  <div className="flex max-w-[400px] w-full items-center">
-                    {searchInput}
-                  </div>
+              <div className="flex mt-7 bg-white p-3 rounded-lg shadow-md w-full gap-4 relative z-10">
+                {/* search data */}
+                <div className="flex items-center">{searchInput}</div>
 
-                  {/* dropdown */}
-                  <Select
-                    label="Select a library"
-                    placeholder="Select a library"
-                    className="flex-grow max-w-[290px] text-dark-red font-bold"
-                  >
-                    {library.map((library) => (
-                      <SelectItem key={library.key}>{library.label}</SelectItem>
-                    ))}
-                  </Select>
-                  <Select
-                    label="Select a user"
-                    placeholder="Select a user"
-                    className="flex-grow max-w-[220px] text-dark-red font-bold"
-                  >
-                    {role.map((role) => (
-                      <SelectItem key={role.key}>{role.label}</SelectItem>
-                    ))}
-                  </Select>
-               
-
-                {/* add data */}
-                <div className="flex items-center">
-                  <ModalAddUser />
-                </div>
+                {/* dropdown */}
+                <Select
+                  label="Select a library"
+                  placeholder="Select a library"
+                  className="flex-grow max-w-[290px] text-dark-red font-bold"
+                >
+                  {library.map((library) => (
+                    <SelectItem key={library.key}>{library.label}</SelectItem>
+                  ))}
+                </Select>
               </div>
             </div>
           </div>
         </div>
 
         {/* content table */}
-        <div className="mt-8 max-w-[960px] mx-auto">
-          <ContentAccountManagement />
+        <div className="mt-10 max-w-[960px] mx-auto">
+        <ContentDailyReports />
         </div>
       </section>
     </AdminLayout>

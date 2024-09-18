@@ -12,16 +12,16 @@ import {
 } from "@nextui-org/react";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
-export default function ModalDelateUser() {
+export default function ModalDelateTime() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
       <div
-        className="bg-fire-brick text-white rounded-md p-1 text-xs cursor-pointer"
+        className="bg-fire-brick text-white rounded-md p-1 pl-3 pr-3 font-semibold text-xs cursor-pointer"
         onClick={onOpen} // Ganti onPress dengan onClick
       >
-        <FontAwesomeIcon icon={faTrash} className="w-[13px]" />
+        <FontAwesomeIcon icon={faTrash} className="w-[13px]" /> Delate Data
       </div>
 
       <Modal size="sm" isOpen={isOpen} onClose={onClose}>

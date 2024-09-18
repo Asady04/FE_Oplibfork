@@ -17,11 +17,11 @@ import {
   faEye,
   faEyeSlash,
   faCamera,
-  faSquarePlus,
+  faPenToSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from "react";
 
-export default function ModalAddUserManual() {
+export default function ModalEditUser() {
   const { isOpen, onOpen, onOpenChange } = useDisclosure();
   const [isVisible, setIsVisible] = useState(false);
   const [selectedImage, setSelectedImage] = useState(null);
@@ -93,15 +93,12 @@ export default function ModalAddUserManual() {
 
   return (
     <>
-      <Button
-        isExternal
-        as={Link}
-        className="bg-dodger-blue text-white"
-        variant="flat"
-        onPress={onOpen}
+       <div
+        className="bg-orange-red text-white rounded-md p-1 text-xs cursor-pointer"
+        onClick={onOpen} 
       >
-        Manually
-      </Button>
+        <FontAwesomeIcon icon={faPenToSquare} className="w-[13px]" />
+      </div>
       <Modal
         isOpen={isOpen}
         onOpenChange={onOpenChange}
@@ -113,10 +110,10 @@ export default function ModalAddUserManual() {
             <>
               <ModalHeader className="flex text-dark-red font-bold text-xl underline underline-dark-red gap-2 items-center">
                 <FontAwesomeIcon
-                  icon={faSquarePlus}
+                  icon={faPenToSquare}
                   style={{ width: "25px", height: "25px" }}
                 />
-                Add User Data
+                Edit User Data
               </ModalHeader>
               <ModalBody className="">
                 <div className="grid grid-cols-3 gap-4">
@@ -162,7 +159,7 @@ export default function ModalAddUserManual() {
                       ))}
                     </Select>
                     <Input
-                      type="number"
+                      type="text"
                       variant="flat"
                       label="Nomor Induk Pegawai"
                       placeholder="Enter your ID number.."
@@ -245,7 +242,7 @@ export default function ModalAddUserManual() {
                     placeholder="Enter your email.."
                   />
                   <Input
-                    type="number"
+                    type="tel"
                     variant="flat"
                     label="Nomor Telepon"
                     placeholder="Enter your phone number.."

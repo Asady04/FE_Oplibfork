@@ -100,7 +100,7 @@ export default function ModalReviewUserA() {
             <>
               <ModalHeader className="flex text-dark-red font-bold text-xl gap-2 items-center">
                 <FontAwesomeIcon
-                  icon={faSquarePlus}
+                  icon={faEye}
                   style={{ width: "25px", height: "25px" }}
                 />
                 Review User Information
