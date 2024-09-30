@@ -14,6 +14,7 @@ module.exports = {
         'white': '#FFFFFF',
         'white-pucat': '#EAEEF3',
         'white-abu': '#A8A8A8',
+        'white-lms': '#F5F9FD',
   
         // Shades of Red
         'dark-red': '#A10B0B', 
