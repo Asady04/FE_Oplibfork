@@ -120,14 +120,14 @@ export default function Sidebar(props) {
                           <p className="hover:text-dark-red">OLAFA</p>
                         </NextLink>
                         <NextLink
-                          href="/user/journals"
+                          href="/user/room-reservation"
                           className="rounded-lg hover:bg-white pl-2 duration-200"
                         >
                           <p className="hover:text-dark-red">
                             Room Reservation
                           </p>
                         </NextLink>
-                        {/* feedback */}
+                        
                         <NextLink
                           href="/user/journals"
                           className="rounded-lg hover:bg-white pl-2 duration-200"
@@ -135,7 +135,7 @@ export default function Sidebar(props) {
                           <p className="hover:text-dark-red">Upload Journal</p>
                         </NextLink>
                         <NextLink
-                          href="/user/journals"
+                          href="/user/lecture-book-upload"
                           className="rounded-lg hover:bg-white pl-2 duration-200"
                         >
                           <p className="hover:text-dark-red">
@@ -273,7 +273,7 @@ export default function Sidebar(props) {
                     >
                       <div className="text-sm pl-6 text-white flex flex-col space-y-2">
                         <NextLink
-                          href="/user/books"
+                          href="/user/history"
                           className="rounded-lg hover:bg-white pl-2 duration-200"
                         >
                           <p className="hover:text-dark-red">
