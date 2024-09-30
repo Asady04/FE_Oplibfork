@@ -32,7 +32,7 @@ export const LectureHome = () => {
               Popular
             </h2>
             <NextLink
-              href="/landing/catalog/books"
+              href="/user/books"
               className="text-white hover:text-white hover:underline hover:decoration-white hover:underline-offset-2 font-semibold text-md -mb-7"
             >
               Show all
@@ -94,7 +94,7 @@ export const LectureHome = () => {
               Books
             </h2>
             <NextLink
-              href="/landing/catalog/books"
+              href="/user/books"
               className="text-white hover:text-white hover:underline hover:decoration-white hover:underline-offset-2 font-semibold text-md -mb-7"
             >
               Show all
@@ -160,7 +160,7 @@ export const LectureHome = () => {
               Journals
             </h2>
             <NextLink
-              href="/landing/catalog/journals"
+              href="/user/journals"
               className="text-white hover:text-white hover:underline hover:decoration-white hover:underline-offset-2 font-semibold text-md -mb-7"
             >
               Show all
