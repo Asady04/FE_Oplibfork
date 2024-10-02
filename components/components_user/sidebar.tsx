@@ -129,7 +129,7 @@ export default function Sidebar(props) {
                         </NextLink>
                         
                         <NextLink
-                          href="/user/journals"
+                          href="/user/journal-upload"
                           className="rounded-lg hover:bg-white pl-2 duration-200"
                         >
                           <p className="hover:text-dark-red">Upload Journal</p>

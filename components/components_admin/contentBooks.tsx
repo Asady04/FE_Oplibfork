@@ -1,5 +1,6 @@
 import NextLink from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Pagination } from "@nextui-org/react";
 import {
   faBook,
   faUser,
@@ -15,8 +16,10 @@ const books = [
     code: "24.01.698",
     title: "ANALISIS DAN MITIGASI RISIKO DALAM PROSES PENGADAAN..",
     author: "DIVAZANNA ILLARITZQI",
-    university: "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
-    classification: "658 - General management, General business management, General industrial management",
+    university:
+      "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
+    classification:
+      "658 - General management, General business management, General industrial management",
     category: "Karya Ilmiah - Skripsi (S1) - Reference - Non-Sirkulasi",
     additionalCategory: "Procurement",
   },
@@ -25,8 +28,10 @@ const books = [
     code: "24.01.699",
     title: "ANALISIS DAN MITIGASI RISIKO DALAM PROSES PENGADAAN..",
     author: "DIVAZANNA ILLARITZQI",
-    university: "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
-    classification: "658 - General management, General business management, General industrial management",
+    university:
+      "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
+    classification:
+      "658 - General management, General business management, General industrial management",
     category: "Karya Ilmiah - Skripsi (S1) - Reference - Non-Sirkulasi",
     additionalCategory: "Procurement",
   },
@@ -35,8 +40,10 @@ const books = [
     code: "24.01.698",
     title: "ANALISIS DAN MITIGASI RISIKO DALAM PROSES PENGADAAN..",
     author: "DIVAZANNA ILLARITZQI",
-    university: "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
-    classification: "658 - General management, General business management, General industrial management",
+    university:
+      "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
+    classification:
+      "658 - General management, General business management, General industrial management",
     category: "Karya Ilmiah - Skripsi (S1) - Reference - Non-Sirkulasi",
     additionalCategory: "Procurement",
   },
@@ -45,8 +52,10 @@ const books = [
     code: "24.01.699",
     title: "ANALISIS DAN MITIGASI RISIKO DALAM PROSES PENGADAAN..",
     author: "DIVAZANNA ILLARITZQI",
-    university: "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
-    classification: "658 - General management, General business management, General industrial management",
+    university:
+      "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
+    classification:
+      "658 - General management, General business management, General industrial management",
     category: "Karya Ilmiah - Skripsi (S1) - Reference - Non-Sirkulasi",
     additionalCategory: "Procurement",
   },
@@ -55,8 +64,10 @@ const books = [
     code: "24.01.698",
     title: "ANALISIS DAN MITIGASI RISIKO DALAM PROSES PENGADAAN..",
     author: "DIVAZANNA ILLARITZQI",
-    university: "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
-    classification: "658 - General management, General business management, General industrial management",
+    university:
+      "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
+    classification:
+      "658 - General management, General business management, General industrial management",
     category: "Karya Ilmiah - Skripsi (S1) - Reference - Non-Sirkulasi",
     additionalCategory: "Procurement",
   },
@@ -65,12 +76,13 @@ const books = [
     code: "24.01.699",
     title: "ANALISIS DAN MITIGASI RISIKO DALAM PROSES PENGADAAN..",
     author: "DIVAZANNA ILLARITZQI",
-    university: "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
-    classification: "658 - General management, General business management, General industrial management",
+    university:
+      "Universitas Telkom, S1 Teknik Industri - Kampus Surabaya, 2024",
+    classification:
+      "658 - General management, General business management, General industrial management",
     category: "Karya Ilmiah - Skripsi (S1) - Reference - Non-Sirkulasi",
     additionalCategory: "Procurement",
   },
-  
 ];
 
 export default function ContentCatalogBooks() {
@@ -86,7 +98,10 @@ export default function ContentCatalogBooks() {
         {/* Collection of Popular Books */}
         <div className="grid grid-cols-2 mt-2 p-2 gap-5 items-center">
           {books.map((book, index) => (
-            <div key={index} className="flex bg-dark-red rounded-lg p-3 gap-2 items-center">
+            <div
+              key={index}
+              className="flex bg-dark-red rounded-lg p-3 gap-2 items-center"
+            >
               {/* Book Cover and Code */}
               <div className="flex flex-col items-center">
                 <img
@@ -137,6 +152,18 @@ export default function ContentCatalogBooks() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="w-full flex justify-center py-3 mt-5">
+        <Pagination
+          total={7}
+          classNames={{
+            wrapper:
+              "gap-0 overflow-visible h-8 rounded-md border border-divider",
+            item: "w-8 h-8 text-small rounded-none bg-white",
+            cursor:
+              "bg-gradient-to-b shadow-lg from-red-700 to-dark-red dark:from-default-300 dark:to-default-100 text-white font-bold",
+          }}
+        />
       </div>
     </section>
   );
