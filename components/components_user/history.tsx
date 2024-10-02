@@ -3,11 +3,6 @@ import NextLink from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faClockRotateLeft,
-  faUser,
-  faCalendarPlus,
-  faTags,
-  faBullhorn,
-  faBookBookmark,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   Pagination,

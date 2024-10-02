@@ -7,7 +7,8 @@ import {
   faClipboardList,
   faExclamationCircle,
   faBullhorn,
-  faBook
+  faBook,
+  faCameraRetro,
 } from "@fortawesome/free-solid-svg-icons";
 import ModalLogout  from "@/components/components_admin/modalLogout"
 
@@ -87,6 +88,15 @@ export const Sidebar = () => {
             </NextLink>
             <span className="absolute left-10 top-1/2 transform -translate-y-1/2 hidden group-hover:block bg-dark-red text-white text-xs font-semibold px-2 py-1 rounded-lg whitespace-nowrap">
               Catalog Management
+            </span>
+          </div>
+
+          <div className="relative group">
+            <NextLink href="/admin/infografis-management">
+              <FontAwesomeIcon icon={faCameraRetro} className="w-[20px] h-[20px] " />
+            </NextLink>
+            <span className="absolute left-10 top-1/2 transform -translate-y-1/2 hidden group-hover:block bg-dark-red text-white text-xs font-semibold px-2 py-1 rounded-lg whitespace-nowrap">
+              Infografis Management
             </span>
           </div>
         </div>

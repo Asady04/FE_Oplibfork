@@ -51,8 +51,10 @@ export default function HomeAdmin() {
         <div className="bg-[url('/assets/image/kampus-surabaya.png')] bg-cover bg-center bg-no-repeat w-full h-[32vh] text-white pb-2 pt-2 shadow-md">
           <div className="flex h-screen pb-14">
             {/* Sidebar */}
-            <div className="fixed w-12 ml-5 z-20">
-              <Sidebar />
+            <div className="fixed h-full bottom-7 p-4">
+              <div className="w-12 h-full z-20">
+                <Sidebar />
+              </div>
             </div>
 
             <div className="flex-1 max-w-[960px] mx-auto mt-6">

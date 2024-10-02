@@ -85,14 +85,14 @@ const roomColumns = [
   },
 ];
 
-export default function LectureBook(props) {
+export default function UserJournal(props) {
   return (
     <section className="bg-white shadow-md shadow-gray-600 rounded-lg p-5">
       {/* Book Section */}
       <div>
         <h4 className="flex gap-2 text-dark-red text-xl font-bold items-center underline">
           <FontAwesomeIcon icon={faFileArrowUp} className="w-[17px]" />
-          Lecture's Book
+          Upload Journal
         </h4>
         <div className="flex justify-between">
           <div className="flex space-x-5"></div>
@@ -118,7 +118,7 @@ export default function LectureBook(props) {
                 </div>
                 <div>
                   <NextLink
-                    href="/user/lecture-book-upload/add"
+                    href="/user/journal-upload/add"
                     className="rounded-lg hover:bg-white pl-2 duration-200"
                   >
                     <Button

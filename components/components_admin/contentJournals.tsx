@@ -1,5 +1,6 @@
 import NextLink from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Pagination } from "@nextui-org/react";
 import {
   faJournalWhills,
   faUser,
@@ -137,6 +138,18 @@ export default function ContentCatalogJournals() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="w-full flex justify-center py-3 mt-5">
+        <Pagination
+          total={7}
+          classNames={{
+            wrapper:
+              "gap-0 overflow-visible h-8 rounded-md border border-divider",
+            item: "w-8 h-8 text-small rounded-none bg-white",
+            cursor:
+              "bg-gradient-to-b shadow-lg from-red-700 to-dark-red dark:from-default-300 dark:to-default-100 text-white font-bold",
+          }}
+        />
       </div>
     </section>
   );
