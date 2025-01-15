@@ -57,11 +57,11 @@ export default function HomeAdmin() {
               </div>
             </div>
 
-            <div className="flex-1 max-w-[960px] mx-auto mt-6">
+            <div className="mt-8 grow space-y-5 pl-20 md:pl-28 pr-5 pb-5">
               {/* Header dengan kalimat Good Morning */}
               <HeaderAdmin />
 
-              <div className="flex mt-7 justify-between bg-white p-3 rounded-lg shadow-md w-full gap-2 relative z-10">
+              <div className="flex mt-6 justify-start bg-white p-3 rounded-lg shadow-md w-full gap-2 relative">
                 {/* title */}
                 <h3 className="flex text-dark-red text-2xl font-bold gap-2 items-center pl-3">
                   <FontAwesomeIcon icon={faNewspaper} />
@@ -78,14 +78,13 @@ export default function HomeAdmin() {
                   <div className="flex items-center">{searchInput}</div>
                 </div>
               </div>
+              {/* content news */}
+              <div className="flex flex-col md:flex-row mt-9 max-w-[960px] mx-auto gap-4">
+                <ContentNewsAdmin />
+                <ContentNewsPublish />
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* content news */}
-        <div className="flex mt-9 max-w-[960px] mx-auto gap-4">
-        <ContentNewsAdmin />
-        <ContentNewsPublish />
         </div>
       </section>
     </AdminLayout>

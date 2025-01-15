@@ -62,13 +62,13 @@ export default function HomeAdmin() {
               </div>
             </div>
 
-            <div className="flex-1 max-w-[960px] mx-auto mt-6">
+            <div className="mt-8 grow space-y-5 pl-20 md:pl-28 pr-5 pb-5">
               {/* Header dengan kalimat Good Morning */}
               <HeaderAdmin />
 
-              <div className="flex mt-7 bg-white p-3 rounded-lg shadow-md w-full gap-4 relative z-10">
+              <div className="flex flex-col md:flex-row justify-between py-3 rounded-lg w-full gap-2 z-0">
                 {/* search data */}
-                <div className="flex items-center">{searchInput}</div>
+                <div className="flex items-center max-w-xs">{searchInput}</div>
 
                 {/* dropdown */}
                 <Select
@@ -81,14 +81,14 @@ export default function HomeAdmin() {
                   ))}
                 </Select>
               </div>
+              <div className="mt-11 mb-9">
+                <ContentDailyReports />
+              </div>
             </div>
           </div>
         </div>
 
         {/* content table */}
-        <div className="mt-10 max-w-[960px] mx-auto">
-        <ContentDailyReports />
-        </div>
       </section>
     </AdminLayout>
   );

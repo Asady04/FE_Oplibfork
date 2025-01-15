@@ -35,9 +35,9 @@ export default function ContentInfografis() {
         </TableHeader>
         <TableBody>
           <TableRow key="1" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">1</TableCell>
-            <TableCell className="">Books Borrowing</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">1</TableCell>
+            <TableCell className="text-default-700 ">Books Borrowing</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -51,9 +51,9 @@ export default function ContentInfografis() {
             </TableCell>
           </TableRow>
           <TableRow key="2" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">2</TableCell>
-            <TableCell className="">Book Returning</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">2</TableCell>
+            <TableCell className="text-default-700 ">Book Returning</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -67,9 +67,9 @@ export default function ContentInfografis() {
             </TableCell>
           </TableRow>
           <TableRow key="3" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">3</TableCell>
-            <TableCell className="">Online Book Revewal</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">3</TableCell>
+            <TableCell className="text-default-700 ">Online Book Revewal</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -83,9 +83,9 @@ export default function ContentInfografis() {
             </TableCell>
           </TableRow>
           <TableRow key="4" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">4</TableCell>
-            <TableCell className="">Room Reservation</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">4</TableCell>
+            <TableCell className="text-default-700 ">Room Reservation</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -99,9 +99,9 @@ export default function ContentInfografis() {
             </TableCell>
           </TableRow>
           <TableRow key="5" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">5</TableCell>
-            <TableCell className="">Online Journal Access</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">5</TableCell>
+            <TableCell className="text-default-700 ">Online Journal Access</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -115,9 +115,9 @@ export default function ContentInfografis() {
             </TableCell>
           </TableRow>
           <TableRow key="6" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">6</TableCell>
-            <TableCell className="">E-Book Access</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">6</TableCell>
+            <TableCell className="text-default-700 ">E-Book Access</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -131,11 +131,11 @@ export default function ContentInfografis() {
             </TableCell>
           </TableRow>
           <TableRow key="7" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">7</TableCell>
-            <TableCell className="">
+            <TableCell className="text-default-700 text-center">7</TableCell>
+            <TableCell className="text-default-700 ">
               Library Clearance Certificate Procedure (SKBP)
             </TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -149,9 +149,9 @@ export default function ContentInfografis() {
             </TableCell>
           </TableRow>
           <TableRow key="8" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">8</TableCell>
-            <TableCell className="">Upload Journal</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">8</TableCell>
+            <TableCell className="text-default-700 ">Upload Journal</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -165,9 +165,9 @@ export default function ContentInfografis() {
             </TableCell>
           </TableRow>
           <TableRow key="9" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">9</TableCell>
-            <TableCell className="">Upload Journal Requirement</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">9</TableCell>
+            <TableCell className="text-default-700 ">Upload Journal Requirement</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -181,9 +181,9 @@ export default function ContentInfografis() {
             </TableCell>
           </TableRow>
           <TableRow key="10" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">10</TableCell>
-            <TableCell className="">Upload Lecture's Book</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">10</TableCell>
+            <TableCell className="text-default-700 ">Upload Lecture's Book</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -197,9 +197,9 @@ export default function ContentInfografis() {
             </TableCell>
           </TableRow>
           <TableRow key="11" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">11</TableCell>
-            <TableCell className="">Assistive Technology Service</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">11</TableCell>
+            <TableCell className="text-default-700 ">Assistive Technology Service</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
@@ -222,7 +222,7 @@ export default function ContentInfografis() {
               "gap-0 overflow-visible h-8 rounded-md border border-divider",
             item: "w-8 h-8 text-small rounded-none bg-white",
             cursor:
-              "bg-gradient-to-b shadow-lg from-red-700 to-dark-red dark:from-default-300 dark:to-default-100 text-white font-bold",
+              "bg-gradient-to-b shadow-lg from-red-700 to-dark-red dark:from-defaefault-100 text-white font-bold",
           }}
         />
       </div>

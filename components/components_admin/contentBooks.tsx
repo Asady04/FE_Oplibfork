@@ -96,11 +96,11 @@ export default function ContentCatalogBooks() {
         </h4>
 
         {/* Collection of Popular Books */}
-        <div className="grid grid-cols-2 mt-2 p-2 gap-5 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 mt-2 p-2 gap-5 items-center">
           {books.map((book, index) => (
             <div
               key={index}
-              className="flex bg-dark-red rounded-lg p-3 gap-2 items-center"
+              className="flex flex-col md:flex-row bg-dark-red rounded-lg p-3 gap-2 items-center"
             >
               {/* Book Cover and Code */}
               <div className="flex flex-col items-center">

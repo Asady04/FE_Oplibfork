@@ -32,11 +32,11 @@ export default function HomeAdmin() {
               </div>
             </div>
 
-            <div className="flex-1 max-w-[960px] mx-auto mt-6">
+            <div className="mt-8 grow space-y-5 pl-20 md:pl-28 pr-5 pb-5">
               {/* Header dengan kalimat Good Morning */}
               <HeaderAdmin />
 
-              <div className="flex mt-7 bg-white p-3 rounded-lg shadow-md w-full gap-4 relative z-10">
+              <div className="flex flex-col md:flex-row justify-between py-3 rounded-lg w-full gap-2 z-0">
                 {/* dropdown */}
                 <Select
                   label="Select a library"
@@ -50,20 +50,19 @@ export default function HomeAdmin() {
                 <Select
                   label="Select a user"
                   placeholder="Select a user"
-                  className="flex-grow max-w-[220px] text-dark-red font-bold"
+                  className="flex-grow max-w-[290px] text-dark-red font-bold"
                 >
                   {role.map((role) => (
                     <SelectItem key={role.key}>{role.label}</SelectItem>
                   ))}
                 </Select>
               </div>
+              {/* content table */}
+              <div className="mt-11 mb-9">
+                <ContentFeedback />
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* content table */}
-        <div className="mt-10 max-w-[960px] mx-auto">
-          <ContentFeedback />
         </div>
       </section>
     </AdminLayout>

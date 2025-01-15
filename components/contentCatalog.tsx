@@ -37,51 +37,51 @@ export const ContentCatalog = () => {
                 <h2 className="flex text-maroon font-semibold text-2xl underline decoration-maroon underline-offset-2 gap-2">
                     <FontAwesomeIcon icon={faCalendarPlus} className='w-[25px] mt-[6px]'/>New Releases</h2>
             </div>
-            <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
+            <div className="grid grid-cols-2 md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku2.svg" 
                     alt="cover buku 2" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku2.svg" 
                     alt="cover buku 2" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku3.svg" 
                     alt="cover buku 3" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku3.svg" 
                     alt="cover buku 3" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
             </div>
         </div>
@@ -95,51 +95,51 @@ export const ContentCatalog = () => {
                     show all
                 </NextLink>
             </div>
-            <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
+            <div className="grid grid-cols-2 md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
                 <img 
                     src="/assets/image/cover buku.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku2.svg" 
                     alt="cover buku 2" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku3.svg" 
                     alt="cover buku 3" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku2.svg" 
                     alt="cover buku 2" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku3.svg" 
                     alt="cover buku 3" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku2.svg" 
                     alt="cover buku 2" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku3.svg" 
                     alt="cover buku 3" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
             </div>
         </div>
@@ -153,51 +153,51 @@ export const ContentCatalog = () => {
                     show all
                 </NextLink>
             </div>
-            <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
+            <div className="grid grid-cols-2 md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 2" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 3" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 2" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 3" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 1" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 2" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
                 <img 
                     src="/assets/image/cover buku journal.svg" 
                     alt="cover buku 3" 
-                    className="h-[160px] transition-transform duration-300 hover:scale-110"
+                    className="transition-transform duration-300 hover:scale-110"
                 />
             </div>
         </div>

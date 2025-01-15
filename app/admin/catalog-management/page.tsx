@@ -33,19 +33,19 @@ export default function HomeAdmin() {
     <AdminLayout>
       <section>
         <div className="bg-[url('/assets/image/kampus-surabaya.png')] bg-cover bg-center bg-no-repeat w-full h-[32vh] text-white pb-2 pt-2 shadow-md">
-          <div className="flex  h-screen pb-14">
+          <div className="flex h-screen pb-14">
             {/* Sidebar */}
             <div className="fixed h-full bottom-7 p-4">
-              <div className="w-12 h-full z-20">
+              <div className="w-12 h-full">
                 <Sidebar />
               </div>
             </div>
-            <div className="flex-1 max-w-[960px] mx-auto mt-6">
+            <div className="mt-8 grow space-y-5 pl-20 md:pl-28 pr-5 pb-5">
               {/* Header dengan kalimat Good Morning */}
               <HeaderAdmin />
 
               {/* Dropdown untuk pemilihan library */}
-              <div className="text-end mb-4 mr-[80px] -mt-7">
+              <div className="flex justify-between py-3 rounded-lg w-full gap-2 z-0">
                 <Dropdown>
                   <DropdownTrigger>
                     <Button
@@ -65,7 +65,7 @@ export default function HomeAdmin() {
                     disallowEmptySelection
                     selectionMode="single"
                     selectedKeys={selectedKeys}
-                    onSelectionChange={setSelectedKeys}
+                    onSelectionChange={() => setSelectedKeys}
                   >
                     <DropdownItem key="Open Library - Bandung">
                       Open Library - Bandung
@@ -84,7 +84,7 @@ export default function HomeAdmin() {
               </div>
 
               {/* Total catalog dan lainnya */}
-              <div className="flex gap-4 -ml-1 -mt-5">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                 {/* Container catalogs */}
                 <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
                   <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
@@ -121,13 +121,12 @@ export default function HomeAdmin() {
                   </h4>
                 </div>
               </div>
+              {/* content table */}
+              <div className="mt-11 mb-9">
+                <ContentCatalogs />
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* content table */}
-        <div className="mt-11 mb-9 max-w-[960px] mx-auto">
-          <ContentCatalogs />
         </div>
       </section>
     </AdminLayout>

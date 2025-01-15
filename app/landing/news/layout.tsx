@@ -4,8 +4,8 @@ export default function NewsLayout({
     children: React.ReactNode;
   }) {
     return (
-      <section className="flex items-center justify-center gap-4 ">
-        <div className="flex-growr">
+      <section className="relative flex flex-col min-h-screen">
+        <div className="flex-grow">
           {children}
         </div>
       </section>

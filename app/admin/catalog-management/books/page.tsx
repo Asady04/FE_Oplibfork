@@ -18,16 +18,15 @@ export default function HomeAdmin() {
               </div>
             </div>
 
-            <div className="flex-1 max-w-[960px] mx-auto mt-6">
+            <div className="mt-8 grow space-y-5 pl-20 md:pl-28 pr-5 pb-5">
               {/* Header dengan kalimat Good Morning */}
               <HeaderAdmin />
+              {/* content table */}
+              <div className="-mt-12 mb-9 mx-auto">
+                <ContentCatalogBooks />
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* content table */}
-        <div className="-mt-12 mb-9 max-w-[960px] mx-auto">
-          <ContentCatalogBooks />
         </div>
       </section>
     </AdminLayout>

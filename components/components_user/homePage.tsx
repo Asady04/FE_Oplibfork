@@ -38,7 +38,7 @@ export const LectureHome = () => {
               Show all
             </NextLink>
           </div>
-          <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
+          <div className="grid grid-cols-2 place-items-center md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
             <img
               src="/assets/image/cover buku.svg"
               alt="cover buku 1"
@@ -100,7 +100,7 @@ export const LectureHome = () => {
               Show all
             </NextLink>
           </div>
-          <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
+          <div className="grid grid-cols-2 place-items-center md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
             <img
               src="/assets/image/cover buku.svg"
               alt="cover buku 1"
@@ -166,7 +166,7 @@ export const LectureHome = () => {
               Show all
             </NextLink>
           </div>
-          <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
+          <div className="grid grid-cols-2 place-items-center md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
             <img
               src="/assets/image/cover buku journal.svg"
               alt="cover buku 1"

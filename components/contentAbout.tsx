@@ -59,7 +59,7 @@ export const ContentAbout = () => {
               mengembangkan konsep "Open" yang terdiri dari 3 (tiga) pokok
               pemikiran, yaitu:
             </p>
-            <div className="mt-5 flex justify-between">
+            <div className="mt-5 flex flex-col md:flex-row space-y-3 justify-between">
               <div>
                 <div className="bg-gainsboro rounded-3xl p-2 pr-4 pl-4">
                   <h4 className="text-dark-red text-sm font-bold">

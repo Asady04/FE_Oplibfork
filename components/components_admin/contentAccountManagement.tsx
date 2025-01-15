@@ -14,10 +14,10 @@ import ModalEditUser from "./modalEditUser";
 
 export default function ContentAccountManagement() {
   return (
-    <div>
+    <div className="">
       <Table
         aria-label="Account Management Table"
-        className="border-separate border-spacing-y-2"
+        className=""
       >
         <TableHeader>
           <TableColumn className="bg-white text-dark-red font-bold text-sm text-center rounded-tl-md rounded-bl-md">
@@ -43,7 +43,7 @@ export default function ContentAccountManagement() {
           </TableColumn>
         </TableHeader>
         <TableBody>
-          <TableRow key="1" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
+          <TableRow key="1" className="bg-[#F9F9F9] text-default-700 rounded-lg shadow-md mb-2">
             <TableCell className="text-center">1</TableCell>
             <TableCell className="text-center">Tony Reichert</TableCell>
             <TableCell className="text-center">1101223089</TableCell>
@@ -58,7 +58,7 @@ export default function ContentAccountManagement() {
               <ModalDelateData />
             </TableCell>
           </TableRow>
-          <TableRow key="2" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
+          <TableRow key="2" className="bg-[#F9F9F9] text-default-700 rounded-lg shadow-md mb-2">
             <TableCell className="text-center">2</TableCell>
             <TableCell className="text-center">Zoey Lang</TableCell>
             <TableCell className="text-center">1101229067</TableCell>
@@ -73,7 +73,7 @@ export default function ContentAccountManagement() {
               <ModalDelateData />
             </TableCell>
           </TableRow>
-          <TableRow key="3" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
+          <TableRow key="3" className="bg-[#F9F9F9] text-default-700 rounded-lg shadow-md mb-2">
             <TableCell className="text-center">3</TableCell>
             <TableCell className="text-center">Jane Fisher</TableCell>
             <TableCell className="text-center">1101229053</TableCell>

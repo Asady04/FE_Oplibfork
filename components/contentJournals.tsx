@@ -4,9 +4,9 @@ import { faUser, faTags, faBullhorn, faBookBookmark } from '@fortawesome/free-so
 
 export const ContentJournals = () => {
   return (
-    <div className="grid grid-cols-2 gap-7">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
       {/* Column 1 */}
-      <div className="flex bg-dark-red p-3 rounded-lg shadow-md shadow-black">
+      <div className="flex flex-col md:flex-row bg-dark-red p-3 rounded-lg shadow-md shadow-black">
         <div className="flex flex-col items-center">
           <img 
             src="/assets/image/cover buku journal.svg" 
@@ -55,7 +55,7 @@ export const ContentJournals = () => {
       </div>
 
       {/* Column 2 */}
-      <div className="flex bg-dark-red p-3 rounded-lg shadow-md shadow-black">
+      <div className="flex flex-col md:flex-row bg-dark-red p-3 rounded-lg shadow-md shadow-black">
         <div className="flex flex-col items-center">
           <img 
             src="/assets/image/cover buku journal.svg" 
@@ -104,7 +104,7 @@ export const ContentJournals = () => {
       </div>
 
       {/* Column 3 */}
-      <div className="flex bg-dark-red p-3 rounded-lg shadow-md shadow-black">
+      <div className="flex flex-col md:flex-row bg-dark-red p-3 rounded-lg shadow-md shadow-black">
         <div className="flex flex-col items-center">
           <img 
             src="/assets/image/cover buku journal.svg" 
@@ -153,7 +153,7 @@ export const ContentJournals = () => {
       </div>
 
       {/* Column 4 */}
-      <div className="flex bg-dark-red p-3 rounded-lg shadow-md shadow-black">
+      <div className="flex flex-col md:flex-row bg-dark-red p-3 rounded-lg shadow-md shadow-black">
         <div className="flex flex-col items-center">
           <img 
             src="/assets/image/cover buku journal.svg" 
@@ -202,7 +202,7 @@ export const ContentJournals = () => {
       </div>
 
       {/* Column 5 */}
-      <div className="flex bg-dark-red p-3 rounded-lg shadow-md shadow-black">
+      <div className="flex flex-col md:flex-row bg-dark-red p-3 rounded-lg shadow-md shadow-black">
         <div className="flex flex-col items-center">
           <img 
             src="/assets/image/cover buku journal.svg" 
@@ -251,7 +251,7 @@ export const ContentJournals = () => {
       </div>
 
       {/* Column 6 */}
-      <div className="flex bg-dark-red p-3 rounded-lg shadow-md shadow-black">
+      <div className="flex flex-col md:flex-row bg-dark-red p-3 rounded-lg shadow-md shadow-black">
         <div className="flex flex-col items-center">
           <img 
             src="/assets/image/cover buku journal.svg" 
@@ -300,7 +300,7 @@ export const ContentJournals = () => {
       </div>
 
       {/* Column 7 */}
-      <div className="flex bg-dark-red p-3 rounded-lg shadow-md shadow-black">
+      <div className="flex flex-col md:flex-row bg-dark-red p-3 rounded-lg shadow-md shadow-black">
         <div className="flex flex-col items-center">
           <img 
             src="/assets/image/cover buku journal.svg" 
@@ -349,7 +349,7 @@ export const ContentJournals = () => {
       </div>
 
       {/* Column 8 */}
-      <div className="flex bg-dark-red p-3 rounded-lg shadow-md shadow-black">
+      <div className="flex flex-col md:flex-row bg-dark-red p-3 rounded-lg shadow-md shadow-black">
         <div className="flex flex-col items-center">
           <img 
             src="/assets/image/cover buku journal.svg" 

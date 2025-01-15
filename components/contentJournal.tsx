@@ -11,7 +11,7 @@ import {
 export const ContentJournal = () => {
   return (
     <section className="p-6 shadow-md shadow-dark-red">
-      <div className="flex gap-4">
+      <div className="flex flex-col md:flex-row gap-4">
         {/* cover journal */}
         <img
           src="/assets/image/cover buku journal.svg"
@@ -20,15 +20,15 @@ export const ContentJournal = () => {
         />
         {/* content informasi */}
         <div className="mt-3">
-          {/* judul journal */}
+          {/* judul book */}
           <h2 className="text-black text-start text-3xl font-bold">
             Data Mining: Algoritma dan Contoh Perhitungan Matematis
           </h2>
 
-          <div className="grid grid-cols-2 gap-7 mt-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-1">
             {/* pengarang */}
-            <div className="flex gap-2 mt-4">
-              <span>
+            <div className="gap-2 mt-3">
+              <span className="inline-block">
                 <h5 className="flex items-center text-white text-sm font-semibold p-1 pl-3 pr-3 gap-2 bg-lime rounded-lg flex-shrink-0">
                   <FontAwesomeIcon icon={faUser} className="h-[17px]" />
                   Pengarang
@@ -64,8 +64,8 @@ export const ContentJournal = () => {
             </div>
 
             {/* penerbit */}
-            <div className="flex gap-2 mt-4">
-              <span>
+            <div className="gap-2 mt-4">
+              <span className="inline-block">
                 <h5 className="flex items-center text-white text-sm font-semibold p-1 pl-[19px] pr-[19px] gap-2 bg-goldenrod rounded-lg flex-shrink-0">
                   <FontAwesomeIcon icon={faBullhorn} className="h-[17px]" />
                   Penerbit

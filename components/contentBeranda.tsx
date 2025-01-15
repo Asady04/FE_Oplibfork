@@ -31,51 +31,51 @@ export const ContentBeranda = () => {
             Show all
           </NextLink>
         </div>
-        <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
+        <div className="grid grid-cols-2 place-items-center md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
           <img
             src="/assets/image/cover buku.svg"
             alt="cover buku 1"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku2.svg"
             alt="cover buku 2"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku3.svg"
             alt="cover buku 3"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku.svg"
             alt="cover buku 1"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku2.svg"
             alt="cover buku 2"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku3.svg"
             alt="cover buku 3"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku.svg"
             alt="cover buku 1"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku2.svg"
             alt="cover buku 2"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku3.svg"
             alt="cover buku 3"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
         </div>
       </div>
@@ -93,51 +93,51 @@ export const ContentBeranda = () => {
             Show all
           </NextLink>
         </div>
-        <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
+        <div className="grid grid-cols-2 place-items-center md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-3 gap-5 shadow-lg">
           <img
             src="/assets/image/cover buku journal.svg"
             alt="cover buku 1"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku journal.svg"
             alt="cover buku 2"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku journal.svg"
             alt="cover buku 3"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku journal.svg"
             alt="cover buku 1"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku journal.svg"
             alt="cover buku 2"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku journal.svg"
             alt="cover buku 3"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku journal.svg"
             alt="cover buku 1"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku journal.svg"
             alt="cover buku 2"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
           <img
             src="/assets/image/cover buku journal.svg"
             alt="cover buku 3"
-            className="h-[160px] transition-transform duration-300 hover:scale-110"
+            className="transition-transform duration-300 hover:scale-110"
           />
         </div>
       </div>
@@ -149,7 +149,7 @@ export const ContentBeranda = () => {
         </h2>
         <div>
           {/* layer 1 */}
-          <div className="grid grid-cols-2 gap-2 rounded-md mt-4 p-3">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-2 rounded-md mt-4 p-3">
             {/* news 1 */}
             <div className="relative group">
               <img
@@ -216,7 +216,7 @@ export const ContentBeranda = () => {
           </div>
 
           {/* layer 2 */}
-          <div className="grid grid-cols-3 gap-2 rounded-md mt-1 p-2">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 rounded-md mt-1 p-2">
             {/* news 3 */}
             <div className="relative group">
               <img

@@ -9,7 +9,7 @@ export default function NewsPage() {
     <NewsLayout>
        <Navbar />
       <section className="mb-8">
-        <div className="flex gap-4 mt-3 mb-7 p-7">
+        <div className="flex flex-col lg:flex-row gap-4 mt-3 mb-7 md:p-7">
           <ContentNews />
           <ContentLatestNews />
         </div>

@@ -337,7 +337,7 @@ const books = [
   },
 ];
 
-export default function JournalsPage(props) {
+export default function JournalsPage(props:any) {
   return (
     <section className="bg-white shadow-md shadow-gray-600 rounded-lg p-5">
       {/* Book Section */}
@@ -349,12 +349,12 @@ export default function JournalsPage(props) {
 
         {/* Collection of Popular Books */}
         <div
-          className={`grid ${props.sidebarOpen ? "grid-cols-2" : "grid-cols-3"} mt-2 p-2 gap-5 items-center`}
+          className={`grid ${props.sidebarOpen ? "md:grid-cols-1 lg:grid-cols-2" : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"} mt-2 p-2 gap-5 items-center`}
         >
           {books.map((book, index) => (
             <div
               key={index}
-              className="flex bg-dark-red rounded-lg p-3 gap-2 items-center"
+              className="flex flex-col md:flex-row bg-dark-red rounded-lg p-3 gap-2 items-center"
             >
               {/* Book Cover and Code */}
               <div className="flex flex-col items-center">

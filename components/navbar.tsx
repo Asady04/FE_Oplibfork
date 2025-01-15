@@ -55,7 +55,10 @@ export const Navbar = () => {
       position="sticky"
       className="bg-white shadow-md w-full"
     >
-      <NavbarContent className="flex-grow basis-1/5 sm:basis-full" justify="start">
+      <NavbarContent
+        className="flex-grow basis-1/5 sm:basis-full"
+        justify="start"
+      >
         <NavbarBrand as="li" className="gap-5 max-w-fit pr-4">
           <NextLink className="flex justify-start items-center gap-1" href="/">
             <img
@@ -65,7 +68,7 @@ export const Navbar = () => {
             />
           </NextLink>
         </NavbarBrand>
-        <ul className="hidden lg:flex gap-5 justify-start ml-2">
+        <ul className="hidden md:flex gap-5 justify-start ml-2">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
@@ -80,14 +83,14 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent
-        className="hidden sm:flex basis-1/5 sm:basis-full"
+        className="hidden md:flex basis-1/5 sm:basis-full"
         justify="end"
       >
-        <NavbarItem className="hidden lg:flex">{searchInput}</NavbarItem>
-        <NavbarItem className="hidden lg:flex">
+        <NavbarItem>{searchInput}</NavbarItem>
+        <NavbarItem>
           <ModalSearch />
         </NavbarItem>
-        <NavbarItem className="hidden md:flex">
+        <NavbarItem>
           <ModalLogin />
         </NavbarItem>
       </NavbarContent>
@@ -97,7 +100,11 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarMenu>
-        {searchInput}
+        <div className="flex justify-between space-x-2">
+          {searchInput}
+          <ModalSearch />
+        </div>
+
         <div className="mx-4 mt-2 flex flex-col gap-2">
           {siteConfig.navMenuItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>

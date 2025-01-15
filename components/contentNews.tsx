@@ -69,7 +69,7 @@ export const ContentNews = () => {
             <FontAwesomeIcon icon={faTags} className="w-[19px]" />
             TAG:
           </h6>
-          <div className="flex gap-2">
+          <div className="grid grid-cols-3 lg:grid-cols-6 gap-2">
             <span className="border-2 border-maroon text-[11px] font-semibold text-maroon pl-2 pr-2 pt-1 pb-1 rounded-lg">
                 Teknologi
             </span>

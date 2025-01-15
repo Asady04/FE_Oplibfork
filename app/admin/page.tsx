@@ -37,17 +37,17 @@ export default function HomeAdmin() {
           <div className="flex h-screen pb-14">
             {/* Sidebar */}
             <div className="fixed h-full bottom-7 p-4">
-              <div className="w-12 h-full z-20">
+              <div className="w-12 h-full z-50">
                 <Sidebar />
               </div>
             </div>
 
-            <div className="flex-1 px-[120px] py-7 mt-2">
+            <div className="mt-8 grow space-y-5 pl-20 md:pl-28 pr-5 pb-5">
               {/* Header dengan kalimat Good Morning */}
               <HeaderAdmin />
 
               {/* Dropdown untuk pemilihan library */}
-              <div className="text-end mb-4 mr-[80px] -mt-7">
+              <div className="flex justify-between py-3 rounded-lg w-full gap-2 z-0">
                 <Dropdown>
                   <DropdownTrigger>
                     <Button
@@ -64,7 +64,7 @@ export default function HomeAdmin() {
                     disallowEmptySelection
                     selectionMode="single"
                     selectedKeys={selectedKeys}
-                    onSelectionChange={setSelectedKeys}
+                    onSelectionChange={()=>setSelectedKeys}
                   >
                     <DropdownItem key="Open Library - Bandung">
                       Open Library - Bandung
@@ -83,9 +83,9 @@ export default function HomeAdmin() {
               </div>
 
               {/* Total catalog dan lainnya */}
-              <div className="flex gap-4 -ml-4">
+              <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                 {/* Container co-admins */}
-                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
+                <div className="bg-white p-2 rounded-lg shadow-md pb-10">
                   <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
                     <FontAwesomeIcon icon={faUserGear} className="w-[25px]" />
                     Co-Admin
@@ -96,7 +96,7 @@ export default function HomeAdmin() {
                 </div>
 
                 {/* Container Staff */}
-                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
+                <div className="bg-white p-2 rounded-lg shadow-md pb-10">
                   <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
                     <FontAwesomeIcon icon={faUserPen} className="w-[25px]" />
                     Staff
@@ -107,7 +107,7 @@ export default function HomeAdmin() {
                 </div>
 
                 {/* Container Lecture */}
-                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
+                <div className="bg-white p-2 rounded-lg shadow-md pb-10">
                   <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
                     <FontAwesomeIcon icon={faUserGroup} className="w-[25px]" />
                     Lecture
@@ -118,7 +118,7 @@ export default function HomeAdmin() {
                 </div>
 
                 {/* Container Student */}
-                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
+                <div className="bg-white p-2 rounded-lg shadow-md pb-10">
                   <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
                     <FontAwesomeIcon icon={faUserGraduate} className="w-[25px]" />
                     Student
@@ -129,7 +129,7 @@ export default function HomeAdmin() {
                 </div>
 
                 {/* Container Catalog */}
-                <div className="bg-white p-2 rounded-lg shadow-md w-[120px] h-[13vh]">
+                <div className="bg-white p-2 rounded-lg shadow-md pb-10">
                   <h6 className="text-start text-dark-red text-[13px] font-bold gap-2">
                     <FontAwesomeIcon icon={faSwatchbook} className="w-[25px]" />
                     Catalog

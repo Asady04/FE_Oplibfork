@@ -337,9 +337,9 @@ const books = [
   },
 ];
 
-export default function BooksPage(props) {
+export default function BooksPage(props:any) {
   return (
-    <section className="bg-white shadow-md shadow-gray-600 rounded-lg p-5">
+    <section className={`${props.sidebarOpen ? "hidden md:block" : "block"}bg-white shadow-md shadow-gray-600 rounded-lg p-5`}>
       {/* Book Section */}
       <div>
         <h4 className="flex gap-2 text-dark-red text-xl font-bold items-center underline">
@@ -349,19 +349,19 @@ export default function BooksPage(props) {
 
         {/* Collection of Popular Books */}
         <div
-          className={`grid ${props.sidebarOpen ? "grid-cols-2" : "grid-cols-3"} mt-2 p-2 gap-5 items-center`}
+          className={`grid ${props.sidebarOpen ? "md:grid-cols-1 lg:grid-cols-2" : "grid-cols-1 md:grid-cols-2 lg:grid-cols-3"} mt-2 p-2 gap-5 items-center`}
         >
           {books.map((book, index) => (
             <div
               key={index}
-              className="flex bg-dark-red rounded-lg p-3 gap-2 items-center"
+              className="flex flex-col md:flex-row bg-dark-red rounded-lg p-3 gap-2 items-center"
             >
               {/* Book Cover and Code */}
               <div className="flex flex-col items-center">
                 <img
                   src={book.cover}
                   alt={`Book Cover ${index + 1}`}
-                  className="h-[160px] mb-2 object-cover"
+                  className="h-[160px] mb-2 object-cover mt-2 md:mt-0"
                 />
                 <p className="text-white text-xs italic">Code: {book.code}</p>
               </div>

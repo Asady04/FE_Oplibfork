@@ -8,6 +8,7 @@ import {
   faSignOutAlt,
   faCaretDown,
   faCaretUp,
+  faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import ModalLogout from "./modalLogout";
 import React from "react";
@@ -15,32 +16,39 @@ import {
   Accordion,
   AccordionItem,
   Avatar,
+  Button,
   ScrollShadow,
 } from "@nextui-org/react";
 import ModalFeedback from "./modalFeedback";
 import ModalInfographic from "./modalInfographic";
 
-export default function Sidebar(props) {
+export default function Sidebar(props: any) {
   return (
-    <ScrollShadow hideScrollBar size={0} className="min-h-full fixed z-10">
+    <ScrollShadow hideScrollBar size={0} className="min-h-full fixed z-50">
       <div className="min-h-full h-screen pb-14">
         {/* Sidebar */}
         <div
-          className={` ml-5 ${props.sidebarOpen ? "w-80" : "w-12"} ease-out duration-300 h-full`}
+          className={`ml-2 md:ml-5 ${props.sidebarOpen ? "w-80" : "w-12"} ease-out duration-300 h-full`}
           onClick={() => props.setSidebarOpen(true)}
         >
+          {/* medium or larger mode */}
           <div className="flex-col justify-between bg-dark-red shadow-lg shadow-gray-400 rounded-lg mt-8 min-h-full pb-5 flex">
             {/* Top section with logo and icons */}
             <div className=" flex-col">
               {/* Logo */}
               <div className={`${props.sidebarOpen ? "px-3" : ""} p-1`}>
-                <div className="bg-white rounded-xl">
+                <div className="bg-white rounded-xl mt-3">
                   {props.sidebarOpen ? (
-                    <img
-                      src="/assets/logo/logo_oplib-teks.svg"
-                      alt="Logo"
-                      className="h-[40px] p-1 pl-1.5 mt-6"
-                    />
+                    <div className="flex justify-between items-center">
+                      <img
+                        src="/assets/logo/logo_oplib-teks.svg"
+                        alt="Logo"
+                        className="h-[40px] p-1 pl-1.5"
+                      />
+                      <Button onPress={() => props.setSidebarOpen(false)} variant="light" isIconOnly>
+                        <FontAwesomeIcon className="text-dark-red" icon={faXmark} />
+                      </Button>
+                    </div>
                   ) : (
                     <img
                       src="/assets/logo/logo_oplib.svg"
@@ -127,7 +135,7 @@ export default function Sidebar(props) {
                             Room Reservation
                           </p>
                         </NextLink>
-                        
+
                         <NextLink
                           href="/user/journal-upload"
                           className="rounded-lg hover:bg-white pl-2 duration-200"
@@ -174,7 +182,12 @@ export default function Sidebar(props) {
                     >
                       <div className="text-sm pl-6 text-white flex flex-col space-y-2">
                         {/* test */}
-                        <ModalInfographic name={'Books Borrowing'} imgURL={'/assets/image/kampus-jakartaA.png,/assets/image/kampus-surabaya.png'}/>
+                        <ModalInfographic
+                          name={"Books Borrowing"}
+                          imgURL={
+                            "/assets/image/kampus-jakartaA.png,/assets/image/kampus-surabaya.png"
+                          }
+                        />
                         <NextLink
                           href="/user/journals"
                           className="rounded-lg hover:bg-white pl-2 duration-200"
@@ -352,6 +365,8 @@ export default function Sidebar(props) {
               )}
             </div>
           </div>
+          {/*  up to medium mode */}
+
           <div className="h-20"></div>
         </div>
       </div>

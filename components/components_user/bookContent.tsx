@@ -13,7 +13,7 @@ export default function ContentCatalogBook() {
     <section className="bg-white shadow-md shadow-gray-600 rounded-lg p-5">
       {/* Book Section */}
       <div className="p-3">
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-col md:flex-row">
           {/* cover book */}
           <img
             src="/assets/image/cover buku3.svg"
@@ -27,7 +27,7 @@ export default function ContentCatalogBook() {
               Data Mining: Algoritma dan Contoh Perhitungan Matematis
             </h2>
 
-            <div className="grid grid-cols-2 gap-7 mt-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-1">
               {/* pengarang */}
               <div className="gap-2 mt-3">
                 <span className="inline-block">

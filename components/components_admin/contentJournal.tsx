@@ -18,7 +18,7 @@ export default function ContentCatalogJournal() {
         <div className="flex justify-end mb-2">
           <ModalEditJournal />
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-col md:flex-row gap-4">
           {/* cover book */}
           <img
             src="/assets/image/cover buku journal.svg"
@@ -32,7 +32,7 @@ export default function ContentCatalogJournal() {
               Data Mining: Algoritma dan Contoh Perhitungan Matematis
             </h2>
 
-            <div className="grid grid-cols-2 gap-7 mt-1">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mt-1">
               {/* pengarang */}
               <div className="gap-2 mt-3">
                 <span className="inline-block">

@@ -17,7 +17,7 @@ export const ContentGallery = () => {
               Tel-U Openlibrary Virtual Tour
             </h2>
           </div>
-          <div className="relative bg-white-pucat rounded-md mt-7 ml-10 mr-10 p-3 justify-center items-center">
+          <div className="relative bg-white-pucat rounded-md mt-7 md:ml-10 md:mr-10 md:p-3 justify-center items-center">
             {/* Text positioned at the top-left corner of the image */}
             <div className="absolute -top-2 left-2 bg-light-red rounded-3xl z-10 pr-3 pl-3">
               <h5 className="text-white text-sm font-semibold p-2">
@@ -31,7 +31,7 @@ export const ContentGallery = () => {
             />
           </div>
 
-          <div className="relative bg-white-pucat rounded-md mt-7 ml-10 mr-10 p-3 justify-center items-center">
+          <div className="relative bg-white-pucat rounded-md mt-7 md:ml-10 md:mr-10 md:p-3 justify-center items-center">
             {/* Text positioned at the top-left corner of the image */}
             <div className="absolute -top-2 left-2 bg-light-red rounded-3xl z-10 pr-3 pl-3">
               <h5 className="text-white text-sm font-semibold p-2">
@@ -45,7 +45,7 @@ export const ContentGallery = () => {
             />
           </div>
 
-          <div className="relative bg-white-pucat rounded-md mt-7 ml-10 mr-10 p-3 justify-center items-center">
+          <div className="relative bg-white-pucat rounded-md mt-7 md:ml-10 md:mr-10 md:p-3 justify-center items-center">
             {/* Text positioned at the top-left corner of the image */}
             <div className="absolute -top-2 left-2 bg-light-red rounded-3xl z-10 pr-3 pl-3">
               <h5 className="text-white text-sm font-semibold p-2">
@@ -59,7 +59,7 @@ export const ContentGallery = () => {
             />
           </div>
 
-          <div className="relative bg-white-pucat rounded-md mt-7 ml-10 mr-10 p-3 justify-center items-center">
+          <div className="relative bg-white-pucat rounded-md mt-7 md:ml-10 md:mr-10 md:p-3 justify-center items-center">
             {/* Text positioned at the top-left corner of the image */}
             <div className="absolute -top-2 left-2 bg-light-red rounded-3xl z-10 pr-3 pl-3">
               <h5 className="text-white text-sm font-semibold p-2">
@@ -73,7 +73,7 @@ export const ContentGallery = () => {
             />
           </div>
 
-          <div className="relative bg-white-pucat rounded-md mt-7 ml-10 mr-10 p-3 justify-center items-center">
+          <div className="relative bg-white-pucat rounded-md mt-7 md:ml-10 md:mr-10 md:p-3 justify-center items-center">
             {/* Text positioned at the top-left corner of the image */}
             <div className="absolute -top-2 left-2 bg-light-red rounded-3xl z-10 pr-3 pl-3">
               <h5 className="text-white text-sm font-semibold p-2">

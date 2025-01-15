@@ -41,54 +41,54 @@ export default function ContentRoomRecervations() {
         </TableHeader>
         <TableBody>
           <TableRow key="1" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">1</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">1</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
                 className="w-[130px] rounded-md inline-block"
               />
             </TableCell>
-            <TableCell className="text-center">Room 1</TableCell>
-            <TableCell className="text-center">4</TableCell>
-            <TableCell className="text-center">Free</TableCell>
-            <TableCell className="flex gap-2 text-white text-center items-center justify-center mt-5">
+            <TableCell className="text-default-700 text-center">Room 1</TableCell>
+            <TableCell className="text-default-700 text-center">4</TableCell>
+            <TableCell className="text-default-700 text-center">Free</TableCell>
+            <TableCell className="text-default-700 flex gap-2 text-center items-center justify-center mt-5">
               <ModalViewRoom />
               <ModalEditRoom />
               <ModalDelateData />
             </TableCell>
           </TableRow>
           <TableRow key="2" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">2</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">2</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
                 className="w-[130px] rounded-md inline-block"
               />
             </TableCell>
-            <TableCell className="text-center">Room 2</TableCell>
-            <TableCell className="text-center">8</TableCell>
-            <TableCell className="text-center">Free</TableCell>
-            <TableCell className="flex gap-2 text-white text-center items-center justify-center mt-5">
+            <TableCell className="text-default-700 text-center">Room 2</TableCell>
+            <TableCell className="text-default-700 text-center">8</TableCell>
+            <TableCell className="text-default-700 text-center">Free</TableCell>
+            <TableCell className="text-default-700 flex gap-2 text-center items-center justify-center mt-5">
               <ModalViewRoom />
               <ModalEditRoom />
               <ModalDelateData />
             </TableCell>
           </TableRow>
           <TableRow key="3" className="bg-[#F9F9F9] rounded-lg shadow-md mb-2">
-            <TableCell className="text-center">3</TableCell>
-            <TableCell className="text-center">
+            <TableCell className="text-default-700 text-center">3</TableCell>
+            <TableCell className="text-default-700 text-center">
               <img
                 src="/assets/image/perpus.png"
                 alt="Room 1"
                 className="w-[130px] rounded-md inline-block"
               />
             </TableCell>
-            <TableCell className="text-center">Room 3</TableCell>
-            <TableCell className="text-center">12</TableCell>
-            <TableCell className="text-center">Paid</TableCell>
-            <TableCell className="flex gap-2 text-white text-center items-center justify-center mt-5">
+            <TableCell className="text-default-700 text-center">Room 3</TableCell>
+            <TableCell className="text-default-700 text-center">12</TableCell>
+            <TableCell className="text-default-700 text-center">Paid</TableCell>
+            <TableCell className="text-default-700 flex gap-2 text-center items-center justify-center mt-5">
               <ModalViewRoom />
               <ModalEditRoom />
               <ModalDelateData />

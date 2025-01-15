@@ -136,16 +136,16 @@ const times = [
   },
 ];
 
-export default function ReservationPage(props) {
+export default function ReservationPage(props:any) {
   return (
     <section className="bg-white shadow-md shadow-gray-600 rounded-lg p-5">
       <div>
-        <div className="flex justify-between">
+        <div className="flex justify-between flex-col md:flex-row space-y-3">
           <h4 className="flex gap-2 text-dark-red text-xl font-bold items-center underline">
             <FontAwesomeIcon icon={faPeopleRoof} className="w-[17px]" />
             Room Reservation
           </h4>
-          <div className="flex space-x-5">
+          <div className="flex space-x-5 flex-col space-y-3 md:flex-row">
             <DatePicker
               label={<p className="font-semibold">Select Date:</p>}
               className="max-w-[284px]"

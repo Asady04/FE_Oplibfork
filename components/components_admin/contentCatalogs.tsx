@@ -23,7 +23,7 @@ export default function ContentCatalogs() {
         </div>
 
         {/* Collection of Popular Books */}
-        <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-2 gap-5 shadow-lg items-center">
+        <div className="grid grid-cols-2 md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-2 gap-5 shadow-lg items-center">
           <img
             src="/assets/image/cover buku.svg"
             alt="cover buku 1"
@@ -87,7 +87,7 @@ export default function ContentCatalogs() {
         </div>
 
         {/* Collection of Popular Books */}
-        <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-2 gap-5 shadow-lg items-center">
+        <div className="grid grid-cols-2 md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-2 gap-5 shadow-lg items-center">
           <img
             src="/assets/image/cover buku.svg"
             alt="cover buku 1"
@@ -151,7 +151,7 @@ export default function ContentCatalogs() {
         </div>
 
         {/* Collection of Popular Books */}
-        <div className="grid grid-cols-9 bg-white-pucat rounded-md mt-4 p-2 gap-5 shadow-lg items-center">
+        <div className="grid grid-cols-2 md:grid-cols-9 bg-white-pucat rounded-md mt-4 p-2 gap-5 shadow-lg items-center">
           <img
             src="/assets/image/cover buku journal.svg"
             alt="cover buku 1"

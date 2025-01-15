@@ -66,55 +66,52 @@ export default function HomeAdmin() {
           <div className="flex h-screen pb-14">
             {/* Sidebar */}
             <div className="fixed h-full bottom-7 p-4">
-              <div className="w-12 h-full z-20">
+              <div className="w-12 h-full">
                 <Sidebar />
               </div>
             </div>
 
-            <div className="flex-1 max-w-[960px] mx-auto mt-6 z-0">
+            <div className="mt-8 grow space-y-5 pl-20 md:pl-28 pr-5 pb-5 z-0">
               {/* Header dengan kalimat Good Morning */}
               <HeaderAdmin />
 
-              <div className="flex justify-between bg-white p-3 rounded-lg shadow-md w-full gap-2 relative z-10">
-                
-                  {/* Search input */}
-                  <div className="flex max-w-[400px] w-full items-center">
-                    {searchInput}
-                  </div>
+              <div className="flex flex-col md:flex-row md:justify-between bg-white p-3 rounded-lg shadow-md w-full gap-2 relative">
+                {/* Search input */}
+                <div className="flex max-w-[400px] w-full items-center">
+                  {searchInput}
+                </div>
 
-                  {/* dropdown */}
-                  <Select
-                    label="Select a library"
-                    placeholder="Select a library"
-                    className="flex-grow max-w-[290px] text-dark-red font-bold"
-                  >
-                    {library.map((library) => (
-                      <SelectItem key={library.key}>{library.label}</SelectItem>
-                    ))}
-                  </Select>
-                  <Select
-                    label="Select a user"
-                    placeholder="Select a user"
-                    className="flex-grow max-w-[220px] text-dark-red font-bold"
-                  >
-                    {role.map((role) => (
-                      <SelectItem key={role.key}>{role.label}</SelectItem>
-                    ))}
-                  </Select>
-               
+                {/* dropdown */}
+                <Select
+                  label="Select a library"
+                  placeholder="Select a library"
+                  className="flex-grow max-w-[290px] text-dark-red font-bold"
+                >
+                  {library.map((library) => (
+                    <SelectItem key={library.key}>{library.label}</SelectItem>
+                  ))}
+                </Select>
+                <Select
+                  label="Select a user"
+                  placeholder="Select a user"
+                  className="flex-grow max-w-[220px] text-dark-red font-bold"
+                >
+                  {role.map((role) => (
+                    <SelectItem key={role.key}>{role.label}</SelectItem>
+                  ))}
+                </Select>
 
                 {/* add data */}
                 <div className="flex items-center">
                   <ModalAddUser />
                 </div>
               </div>
+              {/* content table */}
+              <div className="">
+                <ContentAccountManagement />
+              </div>
             </div>
           </div>
-        </div>
-
-        {/* content table */}
-        <div className="mt-8 max-w-[960px] mx-auto">
-          <ContentAccountManagement />
         </div>
       </section>
     </AdminLayout>

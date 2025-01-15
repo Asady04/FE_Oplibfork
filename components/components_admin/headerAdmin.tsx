@@ -8,7 +8,7 @@ import {
 
 export default function HeaderAdmin() {
   return (
-    <div className="flex justify-between items-start mb-4">
+    <div className="flex justify-between items-start mb-4 flex-col md:flex-row">
       <div>
         <h2 className="italic font-extrabold text-[28px]">
           Good morning <span>Aliza Nurfitrian</span>
